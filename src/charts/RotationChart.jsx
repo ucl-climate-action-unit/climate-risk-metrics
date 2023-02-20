@@ -1,7 +1,7 @@
 import { scaleLinear } from 'd3'
 
 export function RotationChart({ value, height, width }) {
-  const RADIUS = Math.min(200, width / 2)
+  const RADIUS = Math.min(height - 60, width / 2)
   const RECT_WIDTH = 30
   const PADDING = 8
   const SCALE = [-2, -1, 0, 1, 2]

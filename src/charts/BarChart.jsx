@@ -9,7 +9,7 @@ export function BarChart({ value, height, width }) {
   const distanceToIdeal = value - IDEAL_VALUE
   const stepsToIdeal = Math.floor(distanceToIdeal / STEP)
   const { x0, y0 } = { x0: width / 2, y0: height / 2 }
-  const r = width / 6
+  const r = height / 4
 
   const computeDistance = scaleLinear()
     .domain([-1, 1])
@@ -42,7 +42,7 @@ export function BarChart({ value, height, width }) {
     })
 
   return (
-    <svg height={height} width={width} style={{ backgroundColor: '#00736C' }}>
+    <svg height={height} width={width}>
       {scale}
       <circle
         r={r}

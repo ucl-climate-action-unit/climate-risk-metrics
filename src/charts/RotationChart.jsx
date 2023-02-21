@@ -70,7 +70,7 @@ export function RotationChart({ value, height, width }) {
       )
     })
   return (
-    <svg height={height} width={width} style={{ backgroundColor: '#D40078' }}>
+    <svg height={height} width={width}>
       <rect
         x={xi1}
         y={yi1}

@@ -3,7 +3,7 @@ import { Sinusoid } from './Sinusoid'
 export function CurveAmplitudeChart({ value, height, width }) {
   const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   return (
-    <svg width={width} height={height} style={{ backgroundColor: '#4F00D6' }}>
+    <svg width={width} height={height}>
       {SCALE.map((i) => (
         <Sinusoid
           key={i}

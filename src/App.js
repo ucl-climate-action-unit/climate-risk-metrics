@@ -19,7 +19,6 @@ function App() {
   const container = 1440
   const cardHeight = 240
   const cardWidth = (Math.min(container, width) - 64) / 3 - 2 * 24
-  console.log(cardWidth)
 
   return (
     <div className="App">

@@ -1,0 +1,109 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @extend %SatoshiRegular;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+header,
+footer,
+main,
+section,
+video {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:focus {
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+pre,
+img {
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: button;
+  background-color: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+
+  &:focus {
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+input {
+  font-family: inherit;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}

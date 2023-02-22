@@ -77,7 +77,9 @@ export function RotationChart({ value, height, width }) {
         width={RECT_WIDTH}
         height={RADIUS}
         fill="transparent"
-        style={{ stroke: 'white', strokeWidth: '1' }}
+        stroke="white"
+        strokeWidth={1}
+        strokeDasharray={3.75}
       />
       {track}
       <rect

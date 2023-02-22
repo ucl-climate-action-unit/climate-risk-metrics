@@ -24,9 +24,11 @@ export function Sinusoid({ value, width, height, selected, onTrack }) {
     <path
       transform={`translate(${-width / 10})`}
       d={path}
-      opacity={selected ? 1 : 0.3}
+      opacity={selected || value === 1 ? 1 : 0.3}
       stroke="white"
-      strokeWidth={selected || onTrack ? 10 : 1}
+      strokeDasharray={value === 1 ? '3.75' : ''}
+      strokeWidth={selected || (onTrack && value !== 1) ? 10 : 1}
+      strokeLinecap="square"
       fill="none"
     />
   )

@@ -48,8 +48,10 @@ export function BarChart({ value, height, width }) {
         r={r}
         cy={y0}
         cx={x0}
-        fill={'transparent'}
-        style={{ stroke: 'rgb(255,255,255)', strokeWidth: '1' }}
+        fill={'none'}
+        stroke={'white'}
+        strokeWidth={1}
+        strokeDasharray={3.75}
       />
       {track}
       <circle fill="white" r={r} cy={y0} cx={computeDistance(value)} />

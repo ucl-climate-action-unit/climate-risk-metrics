@@ -3,6 +3,7 @@ import { BarChart, RotationChart, CurveAmplitudeChart } from './charts/index.js'
 import { useControls } from 'leva'
 import { useMeasure } from 'react-use'
 import { Card } from './components/Card'
+import content from './data/content.json'
 
 function App() {
   const [ref, { width }] = useMeasure()
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>{content.page_title}</h1>
       <div className="d-flex justify-content-center gap-24 container" ref={ref}>
         <Card
           color={'#D40078'}

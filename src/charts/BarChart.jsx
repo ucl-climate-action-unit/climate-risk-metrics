@@ -1,6 +1,8 @@
 import { scaleLinear } from 'd3'
+import { useMeasure } from 'react-use'
 
-export function BarChart({ value, height, width }) {
+export function BarChart({ value }) {
+  const [wrapperRef, { width, height }] = useMeasure()
   const PADDING = 20
   const IDEAL_VALUE = 0
   const STEP = 0.1
@@ -42,19 +44,21 @@ export function BarChart({ value, height, width }) {
     })
 
   return (
-    <svg height={height} width={width}>
-      {scale}
-      <circle
-        r={r}
-        cy={y0}
-        cx={x0}
-        fill={'none'}
-        stroke={'white'}
-        strokeWidth={1}
-        strokeDasharray={3.75}
-      />
-      {track}
-      <circle fill="white" r={r} cy={y0} cx={computeDistance(value)} />
-    </svg>
+    <div ref={wrapperRef} className="h-full relative">
+      <svg height={height} width={width} className="absolute">
+        {scale}
+        <circle
+          r={r}
+          cy={y0}
+          cx={x0}
+          fill={'none'}
+          stroke={'white'}
+          strokeWidth={1}
+          strokeDasharray={3.75}
+        />
+        {track}
+        <circle fill="white" r={r} cy={y0} cx={computeDistance(value)} />
+      </svg>
+    </div>
   )
 }

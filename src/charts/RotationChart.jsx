@@ -1,6 +1,8 @@
 import { scaleLinear } from 'd3'
+import { useMeasure } from 'react-use'
 
-export function RotationChart({ value, height, width }) {
+export function RotationChart({ value }) {
+  const [wrapperRef, { width, height }] = useMeasure()
   const RADIUS = Math.min(height - 60, width / 2)
   const RECT_WIDTH = 30
   const PADDING = 8
@@ -70,27 +72,29 @@ export function RotationChart({ value, height, width }) {
       )
     })
   return (
-    <svg height={height} width={width}>
-      <rect
-        x={xi1}
-        y={yi1}
-        width={RECT_WIDTH}
-        height={RADIUS}
-        fill="transparent"
-        stroke="white"
-        strokeWidth={1}
-        strokeDasharray={3.75}
-      />
-      {track}
-      <rect
-        x={xi1}
-        y={yCenter - yRectCenter}
-        width={RECT_WIDTH}
-        height={RADIUS}
-        transform={`rotate(${computeRadiantAngle(value)},${xi1 + xRectCenter},${yi1 + RADIUS})`}
-        fill="rgb(255,255,255)"
-      />
-      {scale}
-    </svg>
+    <div ref={wrapperRef} className="h-full relative">
+      <svg height={height} width={width} className="absolute">
+        <rect
+          x={xi1}
+          y={yi1}
+          width={RECT_WIDTH}
+          height={RADIUS}
+          fill="transparent"
+          stroke="white"
+          strokeWidth={1}
+          strokeDasharray={3.75}
+        />
+        {track}
+        <rect
+          x={xi1}
+          y={yCenter - yRectCenter}
+          width={RECT_WIDTH}
+          height={RADIUS}
+          transform={`rotate(${computeRadiantAngle(value)},${xi1 + xRectCenter},${yi1 + RADIUS})`}
+          fill="rgb(255,255,255)"
+        />
+        {scale}
+      </svg>
+    </div>
   )
 }

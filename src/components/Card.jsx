@@ -1,22 +1,10 @@
-export function Card({ children, color, title, subtitle, unit, number }) {
+export function Card({ id, children, title, subtitle, unit, number }) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'start',
-        alignItems: 'flex-start',
-        backgroundColor: `${color}`,
-        padding: '8px',
-        color: '#ffffff',
-      }}
-    >
+    <div className={`flex flex-col justify-start flex-start bg-${id} p-2 text-white`}>
       <h1>{title}</h1>
       <div>{subtitle}</div>
       {children}
-      <div
-        style={{ width: '100%', display: 'flex', alignItems: 'flex-end', flexDirection: 'column' }}
-      >
+      <div className="w-100 flex items-end flex-col">
         <h1>{number}</h1>
         <div>{unit}</div>
       </div>

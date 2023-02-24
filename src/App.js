@@ -24,9 +24,9 @@ function App() {
   return (
     <div className="App">
       <h1>{content.page_title}</h1>
-      <div className="d-flex justify-content-center gap-24 container" ref={ref}>
+      <div className="flex justify-center gap-6" ref={ref}>
         <Card
-          color={'#D40078'}
+          id={'EEI'}
           title={'Imbalance'}
           subtitle={'Earth’s Energy Imbalance (EEI)'}
           number={'1.04'}
@@ -35,7 +35,7 @@ function App() {
           <RotationChart value={imbalanceValue} height={cardHeight} width={cardWidth} />
         </Card>
         <Card
-          color={'#12817A'}
+          id={'STC'}
           title={'Speed'}
           subtitle={'Speed of Temperature Change (STC)'}
           number={'0.57'}
@@ -44,7 +44,7 @@ function App() {
           <BarChart value={speedValue} height={cardHeight} width={cardWidth} />
         </Card>
         <Card
-          color={'#5002D7'}
+          id={'UWI'}
           title={'Unusualness'}
           subtitle={'Unusual Weather Index (UWI)'}
           number={'x4'}

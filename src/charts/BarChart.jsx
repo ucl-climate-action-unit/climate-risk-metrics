@@ -9,7 +9,7 @@ export function BarChart({ value, height, width }) {
   const distanceToIdeal = value - IDEAL_VALUE
   const stepsToIdeal = Math.floor(distanceToIdeal / STEP)
   const { x0, y0 } = { x0: width / 2, y0: height / 2 }
-  const r = height / 4
+  const r = width / 7
 
   const computeDistance = scaleLinear()
     .domain([-1, 1])

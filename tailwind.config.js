@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Satoshi-Regular', 'sans-serif'],
+        bold: ['Satoshi-Bold'],
       },
       colors: {
         EEI: '#D40078',

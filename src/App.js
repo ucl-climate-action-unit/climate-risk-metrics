@@ -25,31 +25,13 @@ function App() {
     <div className="App">
       <h1>{content.page_title}</h1>
       <div className="flex justify-center gap-6" ref={ref}>
-        <Card
-          id={'EEI'}
-          title={'Imbalance'}
-          subtitle={'Earth’s Energy Imbalance (EEI)'}
-          number={'1.04'}
-          unit={'Watt/m2'}
-        >
+        <Card id={'EEI'} number={'1.04'}>
           <RotationChart value={imbalanceValue} height={cardHeight} width={cardWidth} />
         </Card>
-        <Card
-          id={'STC'}
-          title={'Speed'}
-          subtitle={'Speed of Temperature Change (STC)'}
-          number={'0.57'}
-          unit={'°C/Decade'}
-        >
+        <Card id={'STC'} number={'0.57'}>
           <BarChart value={speedValue} height={cardHeight} width={cardWidth} />
         </Card>
-        <Card
-          id={'UWI'}
-          title={'Unusualness'}
-          subtitle={'Unusual Weather Index (UWI)'}
-          number={'x4'}
-          unit={'Out of the Ordinary'}
-        >
+        <Card id={'UWI'} number={'x4'}>
           <CurveAmplitudeChart value={unusualnessValue} height={cardHeight} width={cardWidth} />
         </Card>
       </div>

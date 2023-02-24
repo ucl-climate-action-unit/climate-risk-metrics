@@ -3,7 +3,7 @@ import content from '../data/content.json'
 export function Card({ id, children, number, measureRef }) {
   return (
     <div
-      className={`flex flex-col flex-1 min-w-0 justify-start flex-start bg-${id} p-2 text-white rounded-lg`}
+      className={`flex flex-col flex-1 min-w-0 justify-start bg-${id} p-2 text-white rounded-lg`}
       ref={measureRef}
     >
       <h1 className="text-xl font-bold">{content[`card_${id}_inf_name`]}</h1>

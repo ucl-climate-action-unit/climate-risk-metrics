@@ -3,7 +3,7 @@ import { BarChart, RotationChart, CurveAmplitudeChart } from './charts/index.js'
 import { useControls } from 'leva'
 import { Card } from './components/Card'
 import content from './data/content.json'
-import { METRIC_IDS } from './data/ids'
+import { Summary } from './components/Summary'
 
 function App() {
   // const { imbalanceValue, speedValue, unusualnessValue } = useControls({
@@ -23,16 +23,7 @@ function App() {
       <div className="bg-dark text-white">
         <div className="lg:max-w-[1440] lg:mx-8 md:mx-4">
           <h1>{content.page_title}</h1>
-          <p className="mt-9 mb-16 w-2/3 text-xl">
-            {METRIC_IDS.map((id) => {
-              return (
-                <>
-                  {content[`summary_${id}`]}
-                  <span className="font-bold">{` ${this} ${content[`summary_${id}_unit`]} `}</span>
-                </>
-              )
-            })}
-          </p>
+          <Summary content={content} />
           <div className="flex justify-center lg:gap-6 gap-3">
             <Card id={'EEI'} number={EEIValue}>
               <RotationChart value={EEIValue} />

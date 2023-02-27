@@ -13,6 +13,7 @@ module.exports = {
         EEI: '#D40078',
         STC: '#087E86',
         UWI: '#5002D7',
+        dark: '#0E172F',
       },
       fontSize: {
         body: ['16px', '20px'],

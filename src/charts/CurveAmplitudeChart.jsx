@@ -6,8 +6,9 @@ export function CurveAmplitudeChart({ value }) {
   const SCALE_WIDTH = 24
   const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   return (
-    <div ref={wrapperRef} className="h-full relative">
+    <div ref={wrapperRef} className="h-full relative pl-[24px]">
       <svg width={width} height={height} className="absolute">
+        {/* coordinates for scale are computed empirically */}
         <text x={width - SCALE_WIDTH + 4} y={36} fill="white">
           10
         </text>

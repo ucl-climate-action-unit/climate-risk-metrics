@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <div className="bg-dark text-white">
-        <div className="lg:max-w-[1440] lg:mx-8 md:mx-4">
+        <div className="lg:max-w-[1440px] lg:px-8 md:px-4 sm:px-2 m-auto">
           <h1>{content.page_title}</h1>
           <Summary content={content} />
           <div className="flex justify-center lg:gap-6 gap-3">

@@ -1,4 +1,3 @@
-import { scaleLinear } from 'd3'
 import { useMeasure } from 'react-use'
 import { Sinusoid } from './Sinusoid'
 

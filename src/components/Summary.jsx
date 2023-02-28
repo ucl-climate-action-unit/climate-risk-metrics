@@ -8,7 +8,7 @@ export function Summary({ content, children }) {
         return (
           <span key={id}>
             {content[`summary_${id}`]}
-            <span className="inline-block text-center ml-1">
+            <span className="inline-block ml-2 align-middle">
               {id === 'EEI' ? <IconEEI /> : id === 'STC' ? <IconSTC /> : <IconUWI />}
             </span>
             <span className="font-bold">{` ${this} ${content[`summary_${id}_unit`]} `}</span>

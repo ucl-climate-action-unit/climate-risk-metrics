@@ -6,7 +6,7 @@ export function Card({ id, children, number, measureRef }) {
       style={{ height: 380 }}
       className={`flex flex-col flex-1 min-w-0 justify-start ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
-      } p-2 text-white rounded-lg`}
+      } p-2 text-white rounded-lg mb-4`}
       ref={measureRef}
     >
       <h1 className="text-xl font-bold">{content[`card_${id}_inf_name`]}</h1>

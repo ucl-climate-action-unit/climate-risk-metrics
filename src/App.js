@@ -1,9 +1,7 @@
 import './App.css'
-import { BarChart, RotationChart, CurveAmplitudeChart } from './charts/index.js'
-import { useControls } from 'leva'
-import { Card } from './components/Card'
 import content from './data/content.json'
 import { Summary } from './components/Summary'
+import { CardWithDescription } from './components/CardWithDescription'
 
 function App() {
   // const { imbalanceValue, speedValue, unusualnessValue } = useControls({
@@ -16,7 +14,11 @@ function App() {
     STCValue: 0.57,
     UWIValue: 4,
   }
-  console.log(this)
+  const values = [
+    { id: 'EEI', value: EEIValue },
+    { id: 'STC', value: STCValue },
+    { id: 'UWI', value: UWIValue },
+  ]
 
   return (
     <div className="App">
@@ -25,16 +27,18 @@ function App() {
           <h1>{content.page_title}</h1>
           <Summary content={content} />
           <div className="flex justify-center lg:gap-6 gap-3">
-            <Card id={'EEI'} number={EEIValue}>
-              <RotationChart value={EEIValue} />
-            </Card>
-            <Card id={'STC'} number={STCValue}>
-              <BarChart value={STCValue} />
-            </Card>
-            <Card id={'UWI'} number={UWIValue}>
-              <CurveAmplitudeChart value={UWIValue} />
-            </Card>
+            {values.map((metric) => {
+              return (
+                <CardWithDescription
+                  id={metric.id}
+                  value={metric.value}
+                  shortDescription={content[`${metric.id}_short_description`]}
+                  metric={content.link_to_metric_explainer}
+                />
+              )
+            })}
           </div>
+          <div className="bg-light h-96"></div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import './App.css'
 import intro from './data/intro.json'
-import { CardWithDescription, Section, Summary } from './components'
+import { CardWithDescription, Wrapper, Summary } from './components'
 
 function App() {
   // const { imbalanceValue, speedValue, unusualnessValue } = useControls({
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Section classes="bg-dark text-white pb-14">
+      <Wrapper classes="bg-dark text-white pb-14">
         <h1>{intro.page_title}</h1>
         <Summary content={intro} />
         <div className="flex justify-center lg:gap-6 gap-3">
@@ -36,7 +36,7 @@ function App() {
             )
           })}
         </div>
-      </Section>
+      </Wrapper>
     </div>
   )
 }

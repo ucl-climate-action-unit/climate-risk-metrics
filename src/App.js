@@ -1,8 +1,6 @@
 import './App.css'
 import intro from './data/intro.json'
-import content from './data/content.json'
-import { Summary } from './components/Summary'
-import { CardWithDescription } from './components/CardWithDescription'
+import { CardWithDescription, Section, Summary } from './components'
 
 function App() {
   // const { imbalanceValue, speedValue, unusualnessValue } = useControls({
@@ -23,25 +21,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="bg-dark text-white">
-        <div className="lg:max-w-[1440px] lg:px-8 md:px-4 sm:px-2 m-auto">
-          <h1>{intro.page_title}</h1>
-          <Summary content={intro} />
-          <div className="flex justify-center lg:gap-6 gap-3">
-            {values.map((metric) => {
-              return (
-                <CardWithDescription
-                  id={metric.id}
-                  value={metric.value}
-                  shortDescription={intro[`${metric.id}_short_description`]}
-                  metric={intro.link_to_metric_explainer}
-                />
-              )
-            })}
-          </div>
-          <div className="bg-light"></div>
+      <Section classes="bg-dark text-white pb-14">
+        <h1>{intro.page_title}</h1>
+        <Summary content={intro} />
+        <div className="flex justify-center lg:gap-6 gap-3">
+          {values.map((metric) => {
+            return (
+              <CardWithDescription
+                id={metric.id}
+                value={metric.value}
+                shortDescription={intro[`${metric.id}_short_description`]}
+                metric={intro.link_to_metric_explainer}
+              />
+            )
+          })}
         </div>
-      </div>
+      </Section>
     </div>
   )
 }

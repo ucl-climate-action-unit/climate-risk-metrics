@@ -42,7 +42,11 @@ axios
       ])
     )
     const content = data.sheets[1].data[0].rowData.map((row) => {
-      return { type: row.values[0]?.formattedValue, content: row.values[1]?.formattedValue }
+      return {
+        metric: row.values[0]?.formattedValue,
+        type: row.values[1]?.formattedValue,
+        content: row.values[2]?.formattedValue,
+      }
     })
 
     fs.writeFileSync('src/data/intro.json', JSON.stringify(intro, null, 2))

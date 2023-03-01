@@ -1,27 +1,54 @@
-{
-  "ID": "CONTENT",
-  "page_title": "The Shape of Climate Change",
-  "summary_EEI": "Globally, we’re currently trapping",
-  "summary_EEI_unit": "Watt/m2 of heat",
-  "summary_STC": "This causes temperatures to rise at a speed of",
-  "summary_STC_unit": "°C per decade",
-  "summary_UWI": "and makes out-of-the-ordinary events",
-  "summary_UWI_unit": "times more likely",
-  "card_EEI_inf_name": "Imbalance",
-  "card_EEI_sci_name": "Earth’s Energy Imbalance (EEI)",
-  "card_EEI_unit": "Watts/m2",
-  "EEI_short_description": "Earth’s energy imbalance is the imbalance between of heat that is incoming and outgoing.",
-  "card_STC_inf_name": "Speed",
-  "card_STC_sci_name": "Rate of Temperature Change (STC)",
-  "card_STC_unit": "°C/Decade",
-  "STC_short_description": "This is the speed at which the planet or geographic area is heating.",
-  "card_UWI_inf_name": "Unusualness",
-  "card_UWI_sci_name": "Unusual Weather Index (UWI)",
-  "card_UWI_unit": "Out of the Ordinary",
-  "UWI_short_description": "Unusual weather index is the scale at which we are experincing more record breaking weather events",
-  "link_to_metric_explainer": "Explore the metric",
-  "paragraph_title_EEI": "1.Imbalance",
-  "paragraph_subtitle_EEI": "Earth’s energy imbalance is the imbalance between of heat that is incoming and outgoing.",
-  "paragraph_title_STC": "2. Speed",
-  "paragraph_title_UWI": "3. Unusualness"
-}
+[
+  {
+    "type": "TYPE",
+    "content": "CONTENT"
+  },
+  {
+    "type": "title",
+    "content": "Imbalance"
+  },
+  {
+    "type": "subtitle",
+    "content": "Earth’s energy imbalance is the imbalance between of heat that is incoming and outgoing."
+  },
+  {
+    "type": "text",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nSed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "type": "subtitle",
+    "content": "Imbalance per region"
+  },
+  {
+    "type": "dataviz",
+    "content": "IMBALANCE_REGION"
+  },
+  {
+    "type": "text",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+  },
+  {
+    "type": "text",
+    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "type": "subtitle",
+    "content": "Imbalance per decade"
+  },
+  {
+    "type": "dataviz",
+    "content": "IMBALANCE_DECADE"
+  },
+  {
+    "type": "dataviz",
+    "content": "IMBALANCE_YEARS"
+  },
+  {
+    "type": "text",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+  },
+  {
+    "type": "text",
+    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]

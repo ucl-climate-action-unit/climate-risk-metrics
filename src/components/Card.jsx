@@ -1,4 +1,4 @@
-import content from '../data/content.json'
+import content from '../data/intro.json'
 
 export function Card({ id, children, number, measureRef }) {
   return (

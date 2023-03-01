@@ -24,7 +24,7 @@ HOW TO CREATE AN API KEY
     `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?includeGridData=true&key=${apiKey}`
 */
 
-const sheetId = '10p3heCdHQiosKDVxgor_9OqHJzjLhq07dF2PIDYzs2Y'
+const sheetId = '1Upy87FhOWzGeDzhYkfpfkiIT8VsAQ69ulrHvZAoAbDg'
 const apiKey = 'AIzaSyCovL3X7sblbLZ4LQA7V_nI7Kd41rXNyco'
 
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?includeGridData=true&key=${apiKey}`
@@ -35,12 +35,16 @@ axios
   .then((data) => {
     // console.log(data.sheets)
 
-    const content = Object.fromEntries(
+    const intro = Object.fromEntries(
       data.sheets[0].data[0].rowData.map((row) => [
         row.values[0]?.formattedValue,
         row.values[1]?.formattedValue,
       ])
     )
+    const content = data.sheets[1].data[0].rowData.map((row) => {
+      return { type: row.values[0]?.formattedValue, content: row.values[1]?.formattedValue }
+    })
 
+    fs.writeFileSync('src/data/intro.json', JSON.stringify(intro, null, 2))
     fs.writeFileSync('src/data/content.json', JSON.stringify(content, null, 2))
   })

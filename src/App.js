@@ -1,6 +1,7 @@
 import './App.css'
 import intro from './data/intro.json'
 import { CardWithDescription, Wrapper, Summary } from './components'
+import { ImbalanceSection } from './components/ImbalanceSection'
 
 function App() {
   // const { imbalanceValue, speedValue, unusualnessValue } = useControls({
@@ -37,6 +38,7 @@ function App() {
           })}
         </div>
       </Wrapper>
+      <ImbalanceSection />
     </div>
   )
 }

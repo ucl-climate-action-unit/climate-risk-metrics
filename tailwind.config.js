@@ -14,6 +14,7 @@ module.exports = {
         STC: '#087E86',
         UWI: '#5002D7',
         dark: '#0E172F',
+        light: '#F1F5FF',
       },
       fontSize: {
         body: ['16px', '20px'],

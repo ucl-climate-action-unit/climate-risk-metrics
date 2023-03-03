@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Wrapper classes="bg-dark text-white pb-14">
-        <h1>{intro.page_title}</h1>
+        <h1 className="pt-4">{intro.page_title}</h1>
         <Summary content={intro} EEIValue={EEIValue} STCValue={STCValue} UWIValue={UWIValue} />
         <div className="flex justify-center lg:gap-6 gap-3">
           {values.map((metric) => {

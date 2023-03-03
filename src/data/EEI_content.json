@@ -9,11 +9,11 @@
   },
   {
     "type": "subtitle",
-    "content": "What is it?"
+    "content": "Earth's Energy Imbalance: the primary driver of climate change"
   },
   {
     "type": "text",
-    "content": "The Earth's Energy Imbalance is the difference between the amount of light energy arriving from the sun and the amount of heat energy radiated back into space.\n* A value of 0 means that the Earth's energy flows are balanced. There is as much energy coming into the Earth system as going out.\n* A value greater than 0 means the Earth system is trapping energy. There is more energy coming in than energy radiating out.\n* A value less than 0 means the Earth system is losing energy. There is more energy radiating out than energy coming in.\nThe energy coming from the sun drives all weather patterns on the planet: rain and snow, cold and heat differences, low and high atmospheric pressures, winds and storms. \nA positive Earth's Energy Imbalance is the primary driver of global warming and climate change. \nThe more of the sun's energy we are trapping in the Earth system, the more we are changing and supercharging the weather."
+    "content": "The Earth's Energy Imbalance is the difference between the amount of light energy arriving from the sun and the amount of heat energy radiated back into space.\nHuman greenhouse gas emissions are increasing the Earth's Energy Imbalance. They make it harder for heat to escape, trapping it in the Earth system instead.\nThe energy coming from the sun drives all weather patterns on the planet: rain and snow, cold and heat differences, winds and storms. \nThe more of the sun's energy we are trapping in the Earth system, the more we are changing and supercharging the weather. \nThat's why the Earth's Energy Imbalance can be seen as the primary driver of global warming and climate change."
   },
   {
     "type": "subtitle",
@@ -21,7 +21,15 @@
   },
   {
     "type": "text",
-    "content": "Imagine you're standing on the beach. The sun is shining, it's not too hot or too cold - you feel perfect. \nAt this moment, there is a balance between the light arriving from the sun and the heat radiated by your body into the surroundings.\nNow someone throws a dark blanket over you. This additional layer absorbs the light from the sun and makes it harder for your body heat to escape. As more energy gets trapped by the blanket, you start to feel hotter and hotter. You are experiencing a heating imbalance.\nYou throw off the blanket and take off the jumper you are wearing too. Your body heat can escape easier, and you start cooling down again. You are experiencing a cooling imbalance."
+    "content": "Imagine you're standing on the beach. The sun is shining, it's not too hot or too cold - you feel perfect. \nAt that moment, there is a balance between the light arriving from the sun and the heat radiated by your body into the surroundings.\nNow someone throws a dark blanket over you. This additional layer absorbs the light from the sun and makes it harder for your body heat to escape. As more energy gets trapped by the blanket, you start to feel hotter and hotter. You are experiencing a heating imbalance.\nYou throw off the blanket and take off the jumper you are wearing too. Your body heat can escape easier, and you start cooling down again. You are experiencing a cooling imbalance."
+  },
+  {
+    "type": "subtitle",
+    "content": "What do different values mean?"
+  },
+  {
+    "type": "text",
+    "content": "* A value of 0 means that the Earth's energy flows are balanced. There is as much energy coming into the Earth system as going out.\r\n* A value greater than 0 means the Earth system is trapping energy. There is more energy coming in than energy radiating out.\r\n* A value less than 0 means the Earth system is losing energy. There is more energy radiating out than energy coming in."
   },
   {
     "type": "subtitle",

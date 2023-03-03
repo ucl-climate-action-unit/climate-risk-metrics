@@ -34,32 +34,57 @@ axios
   .then((res) => res.data)
   .then((data) => {
     const findSheet = (sheetName) => {
-      return data.sheets.find((s) => s.properties.title === sheetName).data[0].rowData
+      return data.sheets.find((s) => s.properties.title === sheetName)?.data[0]?.rowData
     }
     const mapIterativeContent = (sheetName) => {
-      return findSheet(sheetName).map((row) => {
+      return findSheet(sheetName)?.map((row) => {
         return {
           type: row.values[0]?.formattedValue,
           content: row.values[1]?.formattedValue,
         }
       })
     }
-    const fixed_content = Object.fromEntries(
+    const fixedContent = Object.fromEntries(
       findSheet('fixed_content').map((row) => [
         row.values[0]?.formattedValue,
         row.values[1]?.formattedValue,
       ])
     )
-    const EEI_content = mapIterativeContent('EEI_content')
-    const STC_content = mapIterativeContent('STC_content')
-    const UWI_content = mapIterativeContent('STC_content')
-    const decades_content = mapIterativeContent('decades_content')
-    const about_the_metrics = mapIterativeContent('about_the_metrics')
+    const mapData = (sheetName) => {
+      return findSheet(sheetName)?.map((row) => {
+        return {
+          year: row.values[0]?.formattedValue,
+          month: row.values[1]?.formattedValue,
+          region: row.values[3]?.formattedValue,
+          value: row.values[2]?.formattedValue,
+        }
+      })
+    }
+    fs.writeFileSync('src/data/fixed_content.json', JSON.stringify(fixedContent, null, 2))
+    fs.writeFileSync(
+      'src/data/EEI_content.json',
+      JSON.stringify(mapIterativeContent('EEI_content'), null, 2)
+    )
+    fs.writeFileSync(
+      'src/data/STC_content.json',
+      JSON.stringify(mapIterativeContent('STC_content'), null, 2)
+    )
+    fs.writeFileSync(
+      'src/data/UWI_content.json',
+      JSON.stringify(mapIterativeContent('UWI_content'), null, 2)
+    )
+    fs.writeFileSync(
+      'src/data/decades_content.json',
+      JSON.stringify(mapIterativeContent('decades_content'), null, 2)
+    )
+    fs.writeFileSync(
+      'src/data/about_the_metrics.json',
+      JSON.stringify(mapIterativeContent('about_the_metrics'), null, 2)
+    )
 
-    fs.writeFileSync('src/data/fixed_content.json', JSON.stringify(fixed_content, null, 2))
-    fs.writeFileSync('src/data/EEI_content.json', JSON.stringify(EEI_content, null, 2))
-    fs.writeFileSync('src/data/STC_content.json', JSON.stringify(STC_content, null, 2))
-    fs.writeFileSync('src/data/UWI_content.json', JSON.stringify(UWI_content, null, 2))
-    fs.writeFileSync('src/data/decades_content.json', JSON.stringify(decades_content, null, 2))
-    fs.writeFileSync('src/data/about_the_metrics.json', JSON.stringify(about_the_metrics, null, 2))
+    fs.writeFileSync('src/data/EEI_data.json', JSON.stringify(mapData('EEI_data'), null, 2))
+    fs.writeFileSync('src/data/STC_data.json', JSON.stringify(mapData('STC_data'), null, 2))
+    fs.writeFileSync('src/data/UWI_data.json', JSON.stringify(mapData('UWI_data'), null, 2))
+    // fs.writeFileSync('src/data/STC_data.json', JSON.stringify(mapData('STC_data'), null, 2))
+    // fs.writeFileSync('src/data/UWI_data.json', JSON.stringify(mapData('UWI_data'), null, 2))
   })

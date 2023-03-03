@@ -21,7 +21,7 @@
   },
   {
     "type": "dataviz",
-    "content": "SPEED_REGION"
+    "content": "UNUSUALNESS_REGION"
   },
   {
     "type": "text",
@@ -37,7 +37,7 @@
   },
   {
     "type": "dataviz",
-    "content": "SPEED_DECADE"
+    "content": "UNUSUALNESS_DECADE"
   },
   {
     "type": "subtitle",
@@ -45,7 +45,7 @@
   },
   {
     "type": "dataviz",
-    "content": "SPEED_YEARS"
+    "content": "UNUSUALNESS_YEARS"
   },
   {
     "type": "text",

@@ -14,7 +14,7 @@ export function Card({ id, children, number, measureRef }) {
       <div className="grow">{children}</div>
       <div className="w-100 flex items-end flex-col">
         <h1 className="text-2xl font-bold">{number}</h1>
-        <div>{content[`card_${id}_unit`]}</div>
+        <div>{content[`card_${id}_number_detail`]}</div>
       </div>
     </div>
   )

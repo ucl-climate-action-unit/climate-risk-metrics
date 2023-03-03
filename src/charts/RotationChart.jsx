@@ -49,7 +49,7 @@ export function RotationChart({ value }) {
           y={yi2 - Math.sin(computeDegreeAngle(v) + Math.PI / 2) * (RADIUS + PADDING)}
           className="small"
         >
-          {v}
+          {v > 0 ? `+${v}` : v}
         </text>
       </g>
     )

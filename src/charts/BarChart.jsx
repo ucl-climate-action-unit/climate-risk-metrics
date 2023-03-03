@@ -3,7 +3,9 @@ import { useMeasure } from 'react-use'
 
 export function BarChart({ value }) {
   const [wrapperRef, { width, height }] = useMeasure()
-  const PADDING = 20
+  const PADDINGX = 56
+  const PADDINGY = 16
+  const LINE_HEIGHT = 20
   const IDEAL_VALUE = 0
   const STEP = 0.1
   const SCALE = [-1, -0.5, 0, 0.5, 1]
@@ -15,7 +17,7 @@ export function BarChart({ value }) {
 
   const computeDistance = scaleLinear()
     .domain([-1, 1])
-    .range([PADDING, width - PADDING])
+    .range([PADDINGX, width - PADDINGX])
 
   const scale = SCALE.map((v) => {
     const x1 = computeDistance(v)
@@ -23,12 +25,12 @@ export function BarChart({ value }) {
       <g key={v}>
         <line
           x1={x1}
-          y1={PADDING}
+          y1={PADDINGY}
           x2={x1}
-          y2={height - PADDING - 16}
+          y2={height - PADDINGY - LINE_HEIGHT}
           style={{ stroke: 'rgb(255,255,255,20%)', strokeWidth: '1' }}
         />
-        <text textAnchor="middle" fill={'white'} x={x1} y={height - PADDING} className="small">
+        <text textAnchor="middle" fill={'white'} x={x1} y={height - PADDINGY} className="small">
           {v > 0 ? `+${v}` : v}
         </text>
       </g>

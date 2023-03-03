@@ -1,5 +1,5 @@
 import { Paragraph, Wrapper, Subtitle, Title, EEIDataviz } from '.'
-import content from '../data/content.json'
+import content from '../data/EEI_content.json'
 
 export function ImbalanceSection({}) {
   return (
@@ -10,9 +10,9 @@ export function ImbalanceSection({}) {
           {content.map((row) => {
             switch (row.type) {
               case 'title':
-                return <Title value={row.content} metric={row.metric} />
+                return <Title value={row.content} metric={'EEI'} />
               case 'subtitle':
-                return <Subtitle value={row.content} metric={row.metric} />
+                return <Subtitle value={row.content} metric={'EEI'} />
               case 'text':
                 return <Paragraph value={row.content} />
               case 'dataviz':

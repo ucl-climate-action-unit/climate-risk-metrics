@@ -24,7 +24,7 @@ HOW TO CREATE AN API KEY
     `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?includeGridData=true&key=${apiKey}`
 */
 
-const sheetId = '1Upy87FhOWzGeDzhYkfpfkiIT8VsAQ69ulrHvZAoAbDg'
+const sheetId = '10p3heCdHQiosKDVxgor_9OqHJzjLhq07dF2PIDYzs2Y'
 const apiKey = 'AIzaSyCovL3X7sblbLZ4LQA7V_nI7Kd41rXNyco'
 
 const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}?includeGridData=true&key=${apiKey}`
@@ -33,22 +33,33 @@ axios
   .get(url)
   .then((res) => res.data)
   .then((data) => {
-    // console.log(data.sheets)
-
-    const intro = Object.fromEntries(
-      data.sheets[0].data[0].rowData.map((row) => [
+    const findSheet = (sheetName) => {
+      return data.sheets.find((s) => s.properties.title === sheetName).data[0].rowData
+    }
+    const mapIterativeContent = (sheetName) => {
+      return findSheet(sheetName).map((row) => {
+        return {
+          type: row.values[0]?.formattedValue,
+          content: row.values[1]?.formattedValue,
+        }
+      })
+    }
+    const fixed_content = Object.fromEntries(
+      findSheet('fixed_content').map((row) => [
         row.values[0]?.formattedValue,
         row.values[1]?.formattedValue,
       ])
     )
-    const content = data.sheets[1].data[0].rowData.map((row) => {
-      return {
-        metric: row.values[0]?.formattedValue,
-        type: row.values[1]?.formattedValue,
-        content: row.values[2]?.formattedValue,
-      }
-    })
+    const EEI_content = mapIterativeContent('EEI_content')
+    const STC_content = mapIterativeContent('STC_content')
+    const UWI_content = mapIterativeContent('STC_content')
+    const decades_content = mapIterativeContent('decades_content')
+    const about_the_metrics = mapIterativeContent('about_the_metrics')
 
-    fs.writeFileSync('src/data/intro.json', JSON.stringify(intro, null, 2))
-    fs.writeFileSync('src/data/content.json', JSON.stringify(content, null, 2))
+    fs.writeFileSync('src/data/fixed_content.json', JSON.stringify(fixed_content, null, 2))
+    fs.writeFileSync('src/data/EEI_content.json', JSON.stringify(EEI_content, null, 2))
+    fs.writeFileSync('src/data/STC_content.json', JSON.stringify(STC_content, null, 2))
+    fs.writeFileSync('src/data/UWI_content.json', JSON.stringify(UWI_content, null, 2))
+    fs.writeFileSync('src/data/decades_content.json', JSON.stringify(decades_content, null, 2))
+    fs.writeFileSync('src/data/about_the_metrics.json', JSON.stringify(about_the_metrics, null, 2))
   })

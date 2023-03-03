@@ -1,5 +1,5 @@
 import './App.css'
-import intro from './data/intro.json'
+import intro from './data/fixed_content.json'
 import { CardWithDescription, Wrapper, Summary } from './components'
 import { ImbalanceSection } from './components/ImbalanceSection'
 

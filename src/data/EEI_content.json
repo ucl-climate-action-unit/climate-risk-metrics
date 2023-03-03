@@ -1,0 +1,90 @@
+[
+  {
+    "type": "TYPE",
+    "content": "CONTENT"
+  },
+  {
+    "type": "title",
+    "content": "Imbalance"
+  },
+  {
+    "type": "subtitle",
+    "content": "What is it?"
+  },
+  {
+    "type": "text",
+    "content": "The Earth's Energy Imbalance is the difference between the amount of light energy arriving from the sun and the amount of heat energy radiated back into space.\n* A value of 0 means that the Earth's energy flows are balanced. There is as much energy coming into the Earth system as going out.\n* A value greater than 0 means the Earth system is trapping energy. There is more energy coming in than energy radiating out.\n* A value less than 0 means the Earth system is losing energy. There is more energy radiating out than energy coming in.\nThe energy coming from the sun drives all weather patterns on the planet: rain and snow, cold and heat differences, low and high atmospheric pressures, winds and storms. \nA positive Earth's Energy Imbalance is the primary driver of global warming and climate change. \nThe more of the sun's energy we are trapping in the Earth system, the more we are changing and supercharging the weather."
+  },
+  {
+    "type": "subtitle",
+    "content": "An analogy of energy balance and imbalance"
+  },
+  {
+    "type": "text",
+    "content": "Imagine you're standing on the beach. The sun is shining, it's not too hot or too cold - you feel perfect. \nAt this moment, there is a balance between the light arriving from the sun and the heat radiated by your body into the surroundings.\nNow someone throws a dark blanket over you. This additional layer absorbs the light from the sun and makes it harder for your body heat to escape. As more energy gets trapped by the blanket, you start to feel hotter and hotter. You are experiencing a heating imbalance.\nYou throw off the blanket and take off the jumper you are wearing too. Your body heat can escape easier, and you start cooling down again. You are experiencing a cooling imbalance."
+  },
+  {
+    "type": "subtitle",
+    "content": "The effect of human activities on the Earth's Energy Imbalance"
+  },
+  {
+    "type": "text",
+    "content": "The Earth's Energy Imbalance fluctuates naturally with the seasons. It also fluctuates from year to year, mostly because of changes in ocean currents. \nIf the Earth's energy flows were balanced, the average value over longer periods of time (for example, the 10-year average) would be close to 0.\nThe 10-year average of the Earth's Energy Imbalance is now consistently positive, meaning there is more energy coming in than going out.\nThis happens because greenhouse gas emissions from human activities act as a blanket. They make it harder for the heat to escape, trapping it instead."
+  },
+  {
+    "type": "subtitle",
+    "content": "What about the unit of measurement?"
+  },
+  {
+    "type": "text",
+    "content": "The Earth's Energy Imbalance is measured in Watt per square meter.\nWatt is a unit to measure power. This is the use or flow of energy:\n*Efficient LED lightbulbs use 4 to 6 Watt. Old-fashioined lightbulbs used 40 to 100 Watt.\n*A fridge uses between 100 to 250 Watt - depending on size.\n*An electric oven uses about 2000 Watt.\nThe unit of the Earth's Energy Imbalance is expressed in Watt/m² - or Watt for every square meter on Earth. \nThere are a huge amount of square meters on the planet, meaning that the Earth's Energy Imbalance summed for the entire planet becomes unimaginably large. "
+  },
+  {
+    "type": "subtitle",
+    "content": "The size of the Earth's Energy Imbalance"
+  },
+  {
+    "type": "text",
+    "content": "There are roughly 510,000,000,000,000 square meters on Earth - a number which we won't even attempt to pronounce.\nBy comparison, there are more than 8 billiion people. Written in full, it looks like this: 8,000,000,000.\nThis means that there are about 64,000 square meters for every person on the planet.\nAt its current rate, it means we are adding roughly 65,000 Watt of energy for every person on the planet. \nThat's the equivalent of 32 ovens per person - blasting away at full heat, with their doors open."
+  },
+  {
+    "type": "subtitle",
+    "content": "Why is it important?"
+  },
+  {
+    "type": "text",
+    "content": "The energy arriving from the sun drives all weather on the planet. \n* It heats up the oceans and evaporates water to create rain and snow. \n* It heats up land and evaporates water from the soil - leading to droughts when it doesn't rain.\n* It heats up the air, leading to the heatwaves.\n* It creates winds and storms.\nThe more energy we are trapping, the more we are super-charging the weather. It can create stronger rainfall; longer droughts and heatwaves; or stronger winds and storms."
+  },
+  {
+    "type": "subtitle",
+    "content": "Energy in and out of the Earth system"
+  },
+  {
+    "type": "text",
+    "content": "When light from the sun reaches Earth, part of it is absorbed by dark surfaces. It turns into heat energy warming up the air, land and sea. It evaporates water to form clouds, or fuels wind energy and storms. Eventually, as heat, it might escape the Earth's system and radiate back into space. A proportion of it gets reflected back into space by clouds or shiny, light surfaces like snow and desert sands.\r"
+  },
+  {},
+  {
+    "type": "dataviz",
+    "content": "IMBALANCE_DECADE"
+  },
+  {
+    "type": "subtitle",
+    "content": "Imbalance over the years"
+  },
+  {
+    "type": "dataviz",
+    "content": "IMBALANCE_YEARS"
+  },
+  {
+    "type": "text",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+  },
+  {
+    "type": "text",
+    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "content": "When light from the sun reaches Earth, it turns into heat energy warming up the air, land and sea. It evaporates water to form clouds, or turns into wind energy. Other parts of it get reflected back into space."
+  }
+]

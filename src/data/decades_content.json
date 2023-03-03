@@ -1,0 +1,33 @@
+[
+  {
+    "type": "METRIC",
+    "content": "TYPE"
+  },
+  {
+    "content": "title"
+  },
+  {
+    "content": "subtitle"
+  },
+  {
+    "content": "text"
+  },
+  {
+    "type": "EEI",
+    "content": "dataviz"
+  },
+  {
+    "type": "STC",
+    "content": "dataviz"
+  },
+  {
+    "type": "UWI",
+    "content": "dataviz"
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {}
+]

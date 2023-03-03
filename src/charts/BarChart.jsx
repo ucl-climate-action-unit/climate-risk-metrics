@@ -29,7 +29,7 @@ export function BarChart({ value }) {
           style={{ stroke: 'rgb(255,255,255,20%)', strokeWidth: '1' }}
         />
         <text textAnchor="middle" fill={'white'} x={x1} y={height - PADDING} className="small">
-          {v}
+          {v > 0 ? `+${v}` : v}
         </text>
       </g>
     )

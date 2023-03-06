@@ -1,11 +1,11 @@
 import './App.css'
-import { EEISection, IntroSection } from './components/index'
+import { IntroSection, DeepeningSection } from './components/index'
 
 function App() {
   return (
     <div className="App">
       <IntroSection />
-      <EEISection />
+      <DeepeningSection />
     </div>
   )
 }

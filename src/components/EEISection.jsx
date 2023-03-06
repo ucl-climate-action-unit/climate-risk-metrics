@@ -1,7 +1,7 @@
 import { Paragraph, Wrapper, Subtitle, Title, EEIDataviz } from '.'
 import content from '../data/EEI_content.json'
 
-export function ImbalanceSection({}) {
+export function EEISection({}) {
   return (
     <Wrapper classes="bg-light pt-20">
       <div className="flex lg:gap-6 pt-14">

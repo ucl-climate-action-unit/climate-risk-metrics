@@ -1,12 +1,11 @@
 import './App.css'
-import { ImbalanceSection } from './components/ImbalanceSection'
-import { IntroSection } from './components/IntroSection'
+import { EEISection, IntroSection } from './components/index'
 
 function App() {
   return (
     <div className="App">
       <IntroSection />
-      <ImbalanceSection />
+      <EEISection />
     </div>
   )
 }

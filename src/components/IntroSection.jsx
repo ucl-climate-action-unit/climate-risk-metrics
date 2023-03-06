@@ -17,10 +17,11 @@ export function IntroSection() {
     <Wrapper classes="bg-dark text-white pb-14">
       <h1 className="pt-4">{intro.page_title}</h1>
       <Summary content={intro} EEIValue={EEIValue} STCValue={STCValue} UWIValue={UWIValue} />
-      <div className="flex justify-center lg:gap-6 gap-3">
-        {values.map((metric) => {
+      <div className="flex flex-col justify-center d-block  gap-2 md:flex-row lg:gap-6">
+        {values.map((metric, i) => {
           return (
             <CardWithDescription
+              key={i}
               id={metric.id}
               value={metric.value}
               shortDescription={intro[`${metric.id}_short_description`]}

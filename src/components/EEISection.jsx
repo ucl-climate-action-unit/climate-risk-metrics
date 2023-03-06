@@ -1,4 +1,4 @@
-import { Paragraph, Wrapper, Subtitle, Title, EEIDataviz } from '.'
+import { Paragraph, Subtitle, Title, EEIDataviz } from '.'
 import content from '../data/EEI_content.json'
 
 export function EEISection({}) {

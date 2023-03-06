@@ -3,26 +3,17 @@ import content from '../data/EEI_content.json'
 
 export function EEISection({}) {
   return (
-    <Wrapper classes="bg-light pt-20">
-      <div className="flex lg:gap-6 pt-14">
-        <div className="flex-1 w-1/3">MENU</div>
-        <div className="flex-initial w-2/3">
-          {content.map((row) => {
-            switch (row.type) {
-              case 'title':
-                return <Title value={row.content} metric={'EEI'} />
-              case 'subtitle':
-                return <Subtitle value={row.content} metric={'EEI'} />
-              case 'text':
-                return <Paragraph value={row.content} />
-              case 'dataviz':
-                return <EEIDataviz type={row.content} />
-              default:
-                console.log(`type of content ${row.type} not permitted`)
-            }
-          })}
-        </div>
-      </div>
-    </Wrapper>
+    <div>
+      {content.map((row, index) => {
+        return (
+          <div key={index}>
+            {(row.type === 'title' && <Title value={row.content} metric={'EEI'} />) ||
+              (row.type === 'subtitle' && <Subtitle value={row.content} metric={'EEI'} />) ||
+              (row.type === 'text' && <Paragraph value={row.content} />) ||
+              (row.type === 'dataviz' && <EEIDataviz type={row.content} />)}
+          </div>
+        )
+      })}
+    </div>
   )
 }

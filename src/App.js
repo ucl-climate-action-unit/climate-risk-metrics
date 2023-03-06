@@ -1,5 +1,5 @@
 import './App.css'
-import { EEISection, IntroSection, DeepeningSection } from './components/index'
+import { IntroSection, DeepeningSection } from './components/index'
 
 function App() {
   return (

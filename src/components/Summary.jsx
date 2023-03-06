@@ -4,7 +4,8 @@ import { METRIC_IDS } from '../utils/ids'
 export function Summary({ content, EEIValue, STCValue, UWIValue }) {
   return (
     <p className="mt-9 mb-16 w-2/3 text-xl block">
-      {METRIC_IDS.map((id) => {
+      {METRIC_IDS.map((m) => {
+        const { id } = m
         return (
           <span key={id}>
             {content[`summary_${id}`]}

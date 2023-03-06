@@ -1,22 +1,21 @@
-export function EEIDataviz({ content }) {
+import { CurveAmplitudeChart } from '../charts'
+// import dataEEI from '../data/dataEEI.json'
+
+export function EEIDataviz({ type }) {
   return (
     <div>
-      {content === 'IMBALANCE_REGION' && (
-        <div>
-          <br />
-          <br />
-          imbalance region viz
-          <br />
-          <br />
-        </div>
-      )}
-      {content === 'IMBALANCE_DECADE' && (
+      {type === 'IMBALANCE_DECADE' && (
         <div>
           <br />
           <br />
           imbalance decade viz
           <br />
           <br />
+        </div>
+      )}
+      {type === 'IMBALANCE_YEARS' && (
+        <div>
+          <CurveAmplitudeChart />
         </div>
       )}
     </div>

@@ -3,7 +3,7 @@ import { SECTIONS } from '../utils/ids'
 
 export function Menu() {
   return (
-    <div className="sticky top-20 ">
+    <div className="sticky top-1/2">
       <div className="flex flex-col md:gap-2">
         {SECTIONS.map((m) => {
           const { id, label } = m

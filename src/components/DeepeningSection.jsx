@@ -10,7 +10,7 @@ import about_the_metrics from '../data/about_the_metrics.json'
 export function DeepeningSection({}) {
   return (
     <Wrapper classes="bg-light pt-20">
-      <div className="flex lg:gap-6 pt-14">
+      <div className="flex lg:gap-6">
         <div className="flex-1 w-1/3">
           <Menu />
         </div>
@@ -23,7 +23,7 @@ export function DeepeningSection({}) {
           {SECTIONS.map((m) => {
             const { id, label } = m
             return (
-              <Element name={id} className="">
+              <Element name={id} className="first:mt-0 mt-20">
                 {id === 'EEI' && <MetricSection content={EEI_content} id={'EEI'} />}
                 {id === 'STC' && <MetricSection content={STC_content} id={'STC'} />}
                 {id === 'UWI' && <MetricSection content={UWI_content} id={'UWI'} />}

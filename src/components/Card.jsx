@@ -2,22 +2,24 @@ import React from 'react'
 import content from '../data/fixed_content.json'
 import { IconArrow, IconEEICardMobile, IconSTCCardMobile, IconUWICardMobile } from '../icons'
 import { useBreakpoints } from '../hooks/useBreakPoints'
+import { useMeasure } from 'react-use'
 
-export function Card({ id, children, number, measureRef, isOpen, setIsOpen }) {
+export function Card({ id, children, number, isOpen, setIsOpen }) {
   const { isMd } = useBreakpoints()
+  const [wrapperRef, { width }] = useMeasure()
 
   return (
     <div
       onClick={() => {
         !isMd && setIsOpen(!isOpen)
       }}
-      style={{ height: isMd ? 390 : isOpen ? 390 : 80 }}
+      style={{ height: isMd ? width : isOpen ? width : 80 }}
       className={`${
         isMd ? 'duration-0' : 'duration-700'
       } relative flex flex-col flex-1 min-w-0 justify-between  ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
       } p-3 text-white rounded-lg`}
-      ref={measureRef}
+      ref={wrapperRef}
     >
       <div className="flex items-center">
         <h1 className="text-xl font-bold mr-1">{content[`card_${id}_inf_name`]}</h1>

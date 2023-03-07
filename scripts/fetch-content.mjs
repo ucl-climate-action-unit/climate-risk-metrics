@@ -38,9 +38,11 @@ axios
     }
     const mapIterativeContent = (sheetName) => {
       return findSheet(sheetName)?.map((row) => {
+        const type = row.values[0]?.formattedValue
         return {
-          type: row.values[0]?.formattedValue,
+          type: type,
           content: row.values[1]?.formattedValue,
+          alt: type === 'image' ? row.values[2]?.formattedValue : undefined,
         }
       })
     }

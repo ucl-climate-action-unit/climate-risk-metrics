@@ -93,6 +93,16 @@
     "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
+    "type": "text",
     "content": "When light from the sun reaches Earth, it turns into heat energy warming up the air, land and sea. It evaporates water to form clouds, or turns into wind energy. Other parts of it get reflected back into space."
+  },
+  {
+    "type": "image",
+    "content": "https://drive.google.com/file/d/1MgTBYJcChGknhi3DaTxHIRl_feh7_Vys/view?usp=sharing",
+    "alt": "altdfjh"
+  },
+  {
+    "type": "image",
+    "content": "https://drive.google.com/file/f/"
   }
 ]

@@ -1,11 +1,8 @@
 export function ImageGDrive({ src, alt }) {
+  const regexUrl = new RegExp('^https://drive.google.com/file/d/(.*?)/(.*)')
   return (
-    <img
-      alt={alt}
-      src={src.replace(
-        new RegExp('^https://drive.google.com/file/d/(.*?)/(.*)'),
-        'https://drive.google.com/uc?export=view&id=$1'
-      )}
-    />
+    src.match(regexUrl) && (
+      <img alt={alt} src={src.replace(regexUrl, 'https://drive.google.com/uc?export=view&id=$1')} />
+    )
   )
 }

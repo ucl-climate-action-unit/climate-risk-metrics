@@ -8,7 +8,10 @@ export function Card({ id, children, number, measureRef, isOpen, setIsOpen }) {
 
   return (
     <div
-      style={{ height: isLg ? 380 : isOpen ? 380 : 80 }}
+      onClick={() => {
+        !isLg && setIsOpen(!isOpen)
+      }}
+      style={{ height: isLg ? 390 : isOpen ? 390 : 80 }}
       className={`${
         isLg ? 'duration-0' : 'duration-700'
       } relative flex flex-col flex-1 min-w-0 justify-between  ${
@@ -18,12 +21,7 @@ export function Card({ id, children, number, measureRef, isOpen, setIsOpen }) {
     >
       <div className="flex items-center">
         <h1 className="text-xl font-bold mr-1">{content[`card_${id}_inf_name`]}</h1>
-        <div
-          onClick={() => {
-            setIsOpen(!isOpen)
-          }}
-          className="lg:hidden"
-        >
+        <div className="lg:hidden">
           <IconArrow />
         </div>
       </div>

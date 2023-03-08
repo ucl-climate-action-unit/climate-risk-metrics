@@ -15,7 +15,7 @@ export function MenuMobile({}) {
       </div>
       <div
         className={`duration-700 -z-10 py-3 fixed top-12 ${
-          isOpen ? 'h-44 opacity-100' : 'h-0 opacity-0'
+          isOpen ? 'h-48 opacity-100' : 'h-0 opacity-0'
         } w-full bg-dark`}
       >
         {isOpen && (

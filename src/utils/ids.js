@@ -10,6 +10,7 @@ export const METRIC_IDS = [
   { id: 'UWI', label: 'Unusualness' },
 ]
 export const SECTIONS = [
+  { id: 'intro', label: 'Overview' },
   { id: 'EEI', label: EEI_content[1].content },
   { id: 'STC', label: STC_content[1].content },
   { id: 'UWI', label: UWI_content[1].content },

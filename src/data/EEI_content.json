@@ -29,7 +29,7 @@
   },
   {
     "type": "text",
-    "content": "* A value of 0 means that the Earth's energy flows are balanced. There is as much energy coming into the Earth system as going out.\r\n* A value greater than 0 means the Earth system is trapping energy. There is more energy coming in than energy radiating out.\r\n* A value less than 0 means the Earth system is losing energy. There is more energy radiating out than energy coming in."
+    "content": "* A value of 0 means that the Earth's energy flows are balanced. There is as much energy coming into the Earth's system as going out.\n* A value greater than 0 means the Earth system is trapping energy. There is more energy coming in than energy radiating out.\n* A value less than 0 means the Earth system is losing energy. There is more energy radiating out than energy coming in."
   },
   {
     "type": "subtitle",

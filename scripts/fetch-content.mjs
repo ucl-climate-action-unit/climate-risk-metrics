@@ -57,9 +57,9 @@ axios
       return findSheet(sheetName)?.map((row) => {
         return {
           year: row.values[0]?.formattedValue,
-          month: row.values[1]?.formattedValue,
-          region: row.values[3]?.formattedValue,
-          value: row.values[2]?.formattedValue,
+          month: row.values[3]?.formattedValue,
+          region: row.values[2]?.formattedValue,
+          value: row.values[1]?.formattedValue,
         }
       })
     }

@@ -1,10 +1,12 @@
 import { useMeasure } from 'react-use'
 import { Sinusoid } from './Sinusoid'
+import { round } from 'lodash'
 
 export function CurveAmplitudeChart({ value }) {
   const [wrapperRef, { width, height }] = useMeasure()
   const SPACE_FOR_SCALE = 24
   const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const valueInt = round(value, 0)
   return (
     <div ref={wrapperRef} className="h-full relative pl-[24px]">
       <svg width={width} height={height} className="absolute">
@@ -41,8 +43,8 @@ export function CurveAmplitudeChart({ value }) {
             <Sinusoid
               key={i}
               value={i}
-              selected={i === value}
-              onTrack={i < value}
+              selected={i === valueInt}
+              onTrack={i < valueInt}
               width={width - SPACE_FOR_SCALE}
               height={height}
             />

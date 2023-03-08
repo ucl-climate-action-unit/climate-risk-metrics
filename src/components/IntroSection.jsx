@@ -1,5 +1,9 @@
 import { CardWithDescription, Summary, Wrapper } from '.'
-import { computeEEIcurrentValueGlobal, computeSTCcurrentGlobalValue } from '../utils/values'
+import {
+  computeEEIcurrentValueGlobal,
+  computeSTCcurrentGlobalValue,
+  computeUWIcurrentGlobalValue,
+} from '../utils/values'
 import intro from '../data/fixed_content.json'
 import { Element } from 'react-scroll'
 
@@ -7,7 +11,7 @@ export function IntroSection() {
   const { EEIValue, STCValue, UWIValue } = {
     EEIValue: computeEEIcurrentValueGlobal(),
     STCValue: computeSTCcurrentGlobalValue(),
-    UWIValue: 4,
+    UWIValue: computeUWIcurrentGlobalValue(),
   }
   const values = [
     { id: 'EEI', value: EEIValue },

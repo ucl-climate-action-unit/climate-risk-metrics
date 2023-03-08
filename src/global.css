@@ -1,1 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('/fonts/Satoshi-Regular.otf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, 'Inter', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, sans-serif;
+}

@@ -3,7 +3,7 @@ import { SECTIONS } from '../utils/ids'
 
 export function MenuDesktop() {
   return (
-    <div className="sticky top-1/2">
+    <div className="sticky top-[calc(50%_-_108.5px)]">
       <div className="flex flex-col md:gap-2">
         {SECTIONS.map((m) => {
           const { id, label } = m

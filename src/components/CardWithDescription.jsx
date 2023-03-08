@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { BarChart, CurveAmplitudeChart, RotationChart } from '../charts'
 import { Card } from './Card'
 import { useBreakpoints } from '../hooks/useBreakPoints'
+import { Link } from 'react-scroll'
 
 export function CardWithDescription({ id, value, shortDescription, metric }) {
   const { isMd } = useBreakpoints()
@@ -16,14 +17,16 @@ export function CardWithDescription({ id, value, shortDescription, metric }) {
       <div className={`${isMd ? 'mb-4' : `duration-700 ${isOpen ? 'mb-4' : 'hidden'}`}`}>
         {shortDescription}
       </div>
-      <a
-        href="/"
-        className={` ${
+      <Link
+        smooth={true}
+        to={id}
+        offset={-80}
+        className={`cursor-pointer ${
           isMd ? 'font-bold underline' : `duration-700 ${isOpen ? 'font-bold underline' : 'hidden'}`
         }`}
       >
         {metric}
-      </a>
+      </Link>
     </div>
   )
 }

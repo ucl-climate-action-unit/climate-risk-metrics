@@ -7,7 +7,6 @@ import { Link } from 'react-scroll'
 export function CardWithDescription({ id, value, shortDescription, metric }) {
   const { isMd } = useBreakpoints()
   const [isOpen, setIsOpen] = useState(false)
-  console.log(isMd)
   return (
     <div className="flex-1">
       <Card id={id} number={value} isOpen={isOpen} setIsOpen={setIsOpen}>

@@ -43,6 +43,7 @@ axios
           type: type,
           content: row.values[1]?.formattedValue,
           alt: type === 'image' ? row.values[2]?.formattedValue : undefined,
+          metric: sheetName === 'decades_content' ? row.values[2]?.formattedValue : undefined,
         }
       })
     }

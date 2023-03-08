@@ -1,5 +1,5 @@
 import { Element } from 'react-scroll/modules'
-import { MetricSection, Wrapper, Menu } from '.'
+import { MetricSection, Wrapper, MenuDesktop } from '.'
 import { SECTIONS } from '../utils/ids'
 import EEI_content from '../data/EEI_content.json'
 import STC_content from '../data/STC_content.json'
@@ -11,11 +11,11 @@ export function DeepeningSection({}) {
   return (
     <Wrapper classes="bg-light pt-20">
       <div className="flex lg:gap-6">
-        <div className="flex-1 w-1/3">
-          <Menu />
+        <div className="hidden md:block flex-1 w-1/3">
+          <MenuDesktop />
         </div>
         <div
-          className="flex-initial w-2/3"
+          className="flex-initial md:w-2/3"
           data-spy="scroll"
           data-target=".navbar"
           data-ofsett="50"

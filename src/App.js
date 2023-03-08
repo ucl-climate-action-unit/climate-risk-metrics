@@ -1,9 +1,10 @@
 import './App.css'
-import { IntroSection, DeepeningSection } from './components/index'
+import { IntroSection, DeepeningSection, MenuMobile } from './components/index'
 
 function App() {
   return (
     <div className="App">
+      <MenuMobile />
       <IntroSection />
       <DeepeningSection />
     </div>

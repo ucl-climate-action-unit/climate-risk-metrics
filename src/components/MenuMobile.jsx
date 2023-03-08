@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import { Link } from 'react-scroll/modules'
-import { Menu, MenuItem } from '.'
+import { MenuItem } from '.'
 import intro from '../data/fixed_content.json'
 import { BurgerMenuSVG, CloseSVG } from '../icons'
-import { SECTIONS } from '../utils/ids'
+import { MENU_SECTIONS } from '../utils/ids'
 
 export function MenuMobile({}) {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +19,7 @@ export function MenuMobile({}) {
       >
         {isOpen && (
           <div className="px-2 flex flex-col gap-2 -z-10">
-            {SECTIONS.map((section) => {
+            {MENU_SECTIONS.map((section) => {
               return (
                 <MenuItem
                   closeMenu={() => setIsOpen(false)}

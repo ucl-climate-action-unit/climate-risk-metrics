@@ -34,7 +34,7 @@ export function Card({ id, children, number, isOpen, setIsOpen }) {
       <div className={`grow ${isMd ? 'show' : isOpen ? 'show' : 'hidden'}`}>{children}</div>
       <div className="w-100 flex items-center lg:flex-col lg:items-end">
         <h1 className="text-xl font-bold mr-1">
-          {(id === 'EEI' || id === 'STC') && number > 0 ? `+${number}` : number}
+          {(id === 'EEI' || id === 'STC') && number > 0 ? `+${number}` : `x${number}`}
         </h1>
         <div>{content[`card_${id}_number_detail`]}</div>
       </div>

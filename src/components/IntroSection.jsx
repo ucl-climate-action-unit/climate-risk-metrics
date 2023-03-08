@@ -15,7 +15,7 @@ export function IntroSection() {
   ]
   return (
     <Wrapper classes="bg-dark text-white pb-14">
-      <h1 className="pt-4 font-sans">{intro.page_title}</h1>
+      <h1 className="hidden md:block pt-4 font-bold">{intro.page_title}</h1>
       <Summary content={intro} EEIValue={EEIValue} STCValue={STCValue} UWIValue={UWIValue} />
       <div className="flex flex-col justify-center d-block  gap-1 md:flex-row lg:gap-6">
         {values.map((metric, i) => {

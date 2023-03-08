@@ -18,7 +18,7 @@ export function Card({ id, children, number, isOpen, setIsOpen }) {
         isMd ? 'duration-0' : 'duration-700'
       } relative flex flex-col flex-1 min-w-0 justify-between  ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
-      } p-3 text-white rounded-lg`}
+      } md:p-2 p-3 text-white rounded-lg`}
       ref={wrapperRef}
     >
       <div className="flex items-center">

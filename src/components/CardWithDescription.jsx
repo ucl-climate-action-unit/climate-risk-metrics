@@ -8,13 +8,15 @@ export function CardWithDescription({ id, value, shortDescription, metric }) {
   const { isMd } = useBreakpoints()
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="flex-1">
+    <div className={`flex-1 ${isOpen ? 'mb-10 lg:mb-0' : ''}`}>
       <Card id={id} number={value} isOpen={isOpen} setIsOpen={setIsOpen}>
         {(id === 'EEI' && <RotationChart value={value} />) ||
           (id === 'STC' && <BarChart value={value} />) ||
           (id === 'UWI' && <CurveAmplitudeChart value={value} />)}
       </Card>
-      <div className={`${isMd ? 'mb-4' : `duration-700 ${isOpen ? 'mb-4' : 'hidden'}`}`}>
+      <div
+        className={`leading-5 mt-4 ${isMd ? 'mb-4' : `duration-700 ${isOpen ? 'mb-4' : 'hidden'}`}`}
+      >
         {shortDescription}
       </div>
       <Link

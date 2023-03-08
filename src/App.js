@@ -3,7 +3,7 @@ import { IntroSection, DeepeningSection, MenuMobile } from './components/index'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-satoshiRegular">
       <MenuMobile />
       <IntroSection />
       <DeepeningSection />

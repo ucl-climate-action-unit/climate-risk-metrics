@@ -75,8 +75,9 @@ export function CurveAmplitudeChart({ value }) {
               value={i}
               selected={i === valueInt}
               onTrack={i < valueInt}
-              width={width - PADDINGX}
+              width={width - PADDINGX - PADDINGX}
               height={height}
+              paddingx={PADDINGX}
             />
           ))}
         </g>

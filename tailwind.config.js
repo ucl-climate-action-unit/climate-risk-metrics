@@ -9,7 +9,7 @@ module.exports = {
         satoshiRegular: ['Satoshi-Regular', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        EEI: '#D40078',
+        EEI: '#CC1476',
         STC: '#087E86',
         UWI: '#5002D7',
         dark: '#0E172F',

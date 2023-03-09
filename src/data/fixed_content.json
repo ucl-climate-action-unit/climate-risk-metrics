@@ -26,5 +26,7 @@
   "card_UWI_legend2": "Natural",
   "UWI_short_description": "The level of unusual, record-breaking weather events resulting from climate change.",
   "link_to_metric_explainer": "Explore the metric",
-  "about_title": "About the project"
+  "foooter_title": "About the project",
+  "footer_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n",
+  "credits": "a project by"
 }

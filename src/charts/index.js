@@ -1,3 +1,6 @@
 export { BarChart } from './BarChart'
 export { CurveAmplitudeChart } from './CurveAmplitudeChart'
 export { RotationChart } from './RotationChart'
+export { EEILegendIcon } from './EEILegendIcon'
+export { STCLegendIcon } from './STCLegendIcon'
+export { UWILegendIcon } from './UWILegendIcon'

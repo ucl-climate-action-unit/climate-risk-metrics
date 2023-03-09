@@ -4,39 +4,69 @@ import { round } from 'lodash'
 
 export function CurveAmplitudeChart({ value }) {
   const [wrapperRef, { width, height }] = useMeasure()
-  const SPACE_FOR_SCALE = 24
+  const PADDINGX = 24
+  const PADDINGY = 30
+  // const SPACE_FOR_SCALE = 24
   const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   const valueInt = round(value, 0)
   return (
-    <div ref={wrapperRef} className="h-full relative pl-[24px]">
-      <svg width={width} height={height} className="absolute">
+    <div ref={wrapperRef} className="h-full relative">
+      <svg width={width} height={height} className="absolute ">
         {/* coordinates for scale are computed empirically */}
-        <text x={width - SPACE_FOR_SCALE + 4} y={36} fill="white">
+        <text x={width - PADDINGX + 4} y={36} fill="white">
           10
         </text>
         <line
-          x1={0}
+          x1={PADDINGX}
           y1={30}
-          x2={width - SPACE_FOR_SCALE}
+          x2={width - PADDINGX}
           y2={30}
           stroke="white"
           strokeWidth={1}
           opacity={0.3}
         />
-        <text x={width - SPACE_FOR_SCALE + 4} y={height / 2} fill="white">
+        {/* line to delate left */}
+        <line
+          x1={PADDINGX}
+          y1={PADDINGY}
+          x2={PADDINGX}
+          y2={height - PADDINGY}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate left*/}
+        <text x={width - PADDINGX + 4} y={height / 2} fill="white">
           1
         </text>
         <line
-          x1={0}
+          x1={PADDINGX}
           y1={height - 30}
-          x2={width - SPACE_FOR_SCALE}
+          x2={width - PADDINGX}
           y2={height - 30}
           stroke="white"
           strokeWidth={1}
           opacity={0.3}
         />
+        {/* line to delate right*/}
+        <line
+          x1={width - PADDINGX}
+          y1={PADDINGY}
+          x2={width - PADDINGX}
+          y2={height - PADDINGY}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate right*/}
         <mask id="maskForSinusoids">
-          <rect x={0} y={0} width={width - SPACE_FOR_SCALE} height={height} fill="white" />
+          <rect
+            x={PADDINGX}
+            y={0}
+            width={width - PADDINGX - PADDINGX}
+            height={height}
+            fill="white"
+          />
         </mask>
         <g mask="url(#maskForSinusoids)">
           {SCALE.map((i) => (
@@ -45,7 +75,7 @@ export function CurveAmplitudeChart({ value }) {
               value={i}
               selected={i === valueInt}
               onTrack={i < valueInt}
-              width={width - SPACE_FOR_SCALE}
+              width={width - PADDINGX}
               height={height}
             />
           ))}

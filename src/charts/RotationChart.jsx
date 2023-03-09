@@ -3,9 +3,11 @@ import { useMeasure } from 'react-use'
 
 export function RotationChart({ value }) {
   const [wrapperRef, { width, height }] = useMeasure()
-  const RADIUS = Math.min(height - 60, width / 2)
+  const RADIUS = Math.min(height - 60, width)
   const RECT_WIDTH = 30
   const PADDING = 8
+  const PADDINGX = 24
+  const PADDINGY = 30
   const SCALE = [-2, -1, 0, 1, 2]
   const IDEAL = 0
   const STEP = 0.2
@@ -27,9 +29,7 @@ export function RotationChart({ value }) {
     .domain([-2, +2])
     .range([-Math.PI / 4, Math.PI / 4])
 
-  const computeRadiantAngle = scaleLinear()
-    .domain([-2, +2])
-    .range([-45, 45])
+  const computeRadiantAngle = scaleLinear().domain([-2, +2]).range([-45, 45])
 
   const scale = SCALE.map((v) => {
     return (
@@ -45,7 +45,7 @@ export function RotationChart({ value }) {
         <text
           textAnchor="middle"
           fill={'white'}
-          x={xCenter + Math.cos(computeDegreeAngle(v) - Math.PI / 2) * (RADIUS + PADDING)}
+          x={xCenter + Math.cos(computeDegreeAngle(v) - Math.PI / 2) * (RADIUS + PADDINGX)}
           y={yi2 - Math.sin(computeDegreeAngle(v) + Math.PI / 2) * (RADIUS + PADDING)}
           className="small"
         >
@@ -73,7 +73,51 @@ export function RotationChart({ value }) {
     })
   return (
     <div ref={wrapperRef} className="h-full relative">
-      <svg height={height} width={width} className="absolute">
+      <svg height={height} width={width} className="absolute ">
+        {/* line to delate top */}
+        <line
+          x1={PADDINGX}
+          y1={30}
+          x2={width - PADDINGX}
+          y2={30}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate top*/}
+        {/* line to delate bottom*/}
+        <line
+          x1={PADDINGX}
+          y1={height - 30}
+          x2={width - PADDINGX}
+          y2={height - 30}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate bottom*/}
+        {/* line to delate left */}
+        <line
+          x1={PADDINGX}
+          y1={PADDINGY}
+          x2={PADDINGX}
+          y2={height - PADDINGY}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate left*/}
+        {/* line to delate right*/}
+        <line
+          x1={width - PADDINGX}
+          y1={PADDINGY}
+          x2={width - PADDINGX}
+          y2={height - PADDINGY}
+          stroke="white"
+          strokeWidth={1}
+          opacity={0.3}
+        />
+        {/* line to delate right*/}
         <rect
           x={xi1}
           y={yi1}

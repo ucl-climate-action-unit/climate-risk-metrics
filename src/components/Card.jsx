@@ -18,7 +18,7 @@ export function Card({ id, children, number, isOpen, setIsOpen }) {
         isMd ? 'duration-0' : 'duration-700'
       } relative flex flex-col flex-1 min-w-0 justify-between  ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
-      } md:p-2 p-3 text-white rounded-lg`}
+      } md:p-2 p-3 md:min-h-[300px] text-white rounded-lg`}
       ref={wrapperRef}
     >
       <div className="flex items-center">
@@ -34,7 +34,7 @@ export function Card({ id, children, number, isOpen, setIsOpen }) {
       <div className={`grow ${isMd ? 'show' : isOpen ? 'show' : 'hidden'}`}>{children}</div>
       <div className="flex w-full justify-between items-end md:flex-row-reverse">
         <div className="w-100 flex items-center md:flex-col md:items-end">
-          <h1 className="text-xl lg:text-2xl  font-bold mr-1">
+          <h1 className="text-xl lg:text-2xl font-bold mr-1">
             {(id === 'EEI' || id === 'STC') && number > 0 ? `+${number}` : `x${number}`}
           </h1>
           <div>{content[`card_${id}_number_detail`]}</div>

@@ -1,5 +1,5 @@
 import './App.css'
-import { IntroSection, DeepeningSection, MenuMobile } from './components/index'
+import { IntroSection, DeepeningSection, MenuMobile, Footer } from './components/index'
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <MenuMobile />
       <IntroSection />
       <DeepeningSection />
+      <Footer />
     </div>
   )
 }

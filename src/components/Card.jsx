@@ -4,6 +4,7 @@ import { IconArrow, IconEEICardMobile, IconSTCCardMobile, IconUWICardMobile } fr
 import { useBreakpoints } from '../hooks/useBreakPoints'
 import { useMeasure } from 'react-use'
 import { CardLegend } from '.'
+import { altTextVisualizations } from '../utils/alt'
 
 export function Card({ id, children, number, isOpen, setIsOpen }) {
   const { isMd } = useBreakpoints()
@@ -20,6 +21,7 @@ export function Card({ id, children, number, isOpen, setIsOpen }) {
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
       } md:p-2 p-3 md:min-h-[360px] text-white rounded-lg`}
       ref={wrapperRef}
+      alt={altTextVisualizations(id, content, number)}
     >
       <div className="flex items-center">
         <h1 className="text-xl font-bold mr-1">{content[`card_${id}_inf_name`]}</h1>

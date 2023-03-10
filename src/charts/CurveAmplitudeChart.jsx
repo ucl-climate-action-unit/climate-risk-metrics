@@ -14,14 +14,14 @@ export function CurveAmplitudeChart({ value }) {
       {width > 0 && height > 0 && (
         <svg width={width} height={height} className="absolute ">
           {/* coordinates for scale are computed empirically */}
-          <text x={width - PADDINGX + 4} y={36} fill="white">
+          <text x={width - PADDINGX + 4} y={height * 0.125} fill="white">
             10
           </text>
           <line
             x1={PADDINGX}
-            y1={30}
+            y1={height * 0.125 - 1}
             x2={width - PADDINGX}
-            y2={30}
+            y2={height * 0.125 - 1}
             stroke="white"
             strokeWidth={1}
             opacity={0.3}
@@ -31,9 +31,9 @@ export function CurveAmplitudeChart({ value }) {
           </text>
           <line
             x1={PADDINGX}
-            y1={height - 30}
+            y1={height - height * 0.125 + 1}
             x2={width - PADDINGX}
-            y2={height - 30}
+            y2={height - height * 0.125 + 1}
             stroke="white"
             strokeWidth={1}
             opacity={0.3}

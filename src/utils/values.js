@@ -13,21 +13,17 @@ const computeCurrent = (prev, current) => {
   return +prev.year >= +current.year && +prev.month > +current.month ? prev : current
 }
 
-export const computeEEIcurrentValueGlobal = () => {
+export const computeEEIValueGlobalByYear = (year) => {
   const EEICurrentGlobalData = filterGlobal(EEI_data).reduce((prev, current) =>
     computeCurrent(prev, current)
   )
   return formatValue(EEICurrentGlobalData.value)
 }
-export const computeSTCcurrentGlobalValue = () => {
-  const STCCurrentGlobalData = filterGlobal(STC_data).reduce((prev, current) =>
+
+export const computeCurrentGlobalValue = (metricId) => {
+  const data = metricId === 'EEI' ? EEI_data : metricId === 'STC' ? STC_data : UWI_data
+  const STCCurrentGlobalData = filterGlobal(data).reduce((prev, current) =>
     computeCurrent(prev, current)
   )
-  return formatValue(STCCurrentGlobalData.value)
-}
-export const computeUWIcurrentGlobalValue = () => {
-  const UWICurrentGlobalData = filterGlobal(UWI_data).reduce((prev, current) =>
-    computeCurrent(prev, current)
-  )
-  return formatValue(UWICurrentGlobalData.value, 1)
+  return formatValue(STCCurrentGlobalData.value, metricId === 'UWI' ? 1 : undefined)
 }

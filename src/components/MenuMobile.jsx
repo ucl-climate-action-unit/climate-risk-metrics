@@ -4,21 +4,21 @@ import intro from '../data/fixed_content.json'
 import { BurgerMenuSVG, CloseSVG } from '../icons'
 import { MENU_SECTIONS } from '../utils/ids'
 
-export function MenuMobile({}) {
+export function MenuMobile() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="md:hidden bg-dark text-white fixed w-full">
+    <div className="md:hidden bg-dark text-white fixed w-full z-10">
       <div className="z-50 flex justify-between items-center px-2">
-        <h1 className="py-3 text-base font-bold">{intro.page_title}</h1>
+        <h1 className="py-3 text-base font-bold">{intro.page_title} </h1>
         <div onClick={() => setIsOpen(!isOpen)}>{!isOpen ? <BurgerMenuSVG /> : <CloseSVG />}</div>
       </div>
       <div
         className={`duration-700 -z-10 py-3 fixed top-12 ${
           isOpen ? 'h-52 opacity-100' : 'h-0 opacity-0'
-        } w-full bg-dark`}
+        } w-full bg-light`}
       >
         {isOpen && (
-          <div className="px-2 flex flex-col gap-2 -z-10">
+          <div className="px-2 flex flex-col gap-2 -z-10 ">
             {MENU_SECTIONS.map((section) => {
               return (
                 <MenuItem

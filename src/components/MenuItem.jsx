@@ -14,7 +14,7 @@ export function MenuItem({ id, label, closeMenu }) {
           ? 'text-STC'
           : id === 'UWI'
           ? 'text-UWI'
-          : 'md:text-dark text-white'
+          : 'text-dark'
       }`}
       spy={true}
       to={id}

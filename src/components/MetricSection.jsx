@@ -1,4 +1,4 @@
-import { Paragraph, Subtitle, Title, EEIDataviz, ImageGDrive } from '.'
+import { Paragraph, Subtitle, Title, SmallMultiples, ImageGDrive } from '.'
 
 export function MetricSection({ id, content }) {
   return (
@@ -9,7 +9,7 @@ export function MetricSection({ id, content }) {
             {(row.type === 'title' && <Title value={row.content} metric={id} />) ||
               (row.type === 'subtitle' && <Subtitle value={row.content} metric={id} />) ||
               (row.type === 'text' && <Paragraph value={row.content} />) ||
-              (row.type === 'dataviz' && <EEIDataviz type={row.content} />) ||
+              (row.type === 'dataviz' && <SmallMultiples id={'EEI'} type={row.content} />) ||
               (row.type === 'image' && <ImageGDrive src={row.content} alt={row.alt} />)}
           </div>
         )

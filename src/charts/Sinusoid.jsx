@@ -26,7 +26,7 @@ export function Sinusoid({ value, width, height, selected, onTrack, paddingx }) 
       opacity={selected || value === 1 ? 1 : 0.3}
       stroke="white"
       strokeDasharray={value === 1 ? '3.75' : ''}
-      strokeWidth={selected || (onTrack && value !== 1) ? 20 : 1}
+      strokeWidth={selected || (onTrack && value !== 1) ? width / 27 : 1}
       strokeLinecap="square"
       fill="none"
     />

@@ -11,77 +11,51 @@ export function CurveAmplitudeChart({ value }) {
   const valueInt = round(value, 0)
   return (
     <div ref={wrapperRef} className="h-full relative">
-      <svg width={width} height={height} className="absolute ">
-        {/* coordinates for scale are computed empirically */}
-        <text x={width - PADDINGX + 4} y={36} fill="white">
-          10
-        </text>
-        <line
-          x1={PADDINGX}
-          y1={30}
-          x2={width - PADDINGX}
-          y2={30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate left */}
-        <line
-          x1={PADDINGX}
-          y1={PADDINGY}
-          x2={PADDINGX}
-          y2={height - PADDINGY}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate left*/}
-        <text x={width - PADDINGX + 4} y={height / 2} fill="white">
-          1
-        </text>
-        <line
-          x1={PADDINGX}
-          y1={height - 30}
-          x2={width - PADDINGX}
-          y2={height - 30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate right*/}
-        <line
-          x1={width - PADDINGX}
-          y1={PADDINGY}
-          x2={width - PADDINGX}
-          y2={height - PADDINGY}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate right*/}
-        <mask id="maskForSinusoids">
-          <rect
-            x={PADDINGX}
-            y={0}
-            width={width - PADDINGX - PADDINGX}
-            height={height}
-            fill="white"
+      {width > 0 && height > 0 && (
+        <svg width={width} height={height} className="absolute ">
+          {/* coordinates for scale are computed empirically */}
+          <text x={width - PADDINGX + 4} y={36} fill="white">
+            10
+          </text>
+          <line
+            x1={PADDINGX}
+            y1={30}
+            x2={width - PADDINGX}
+            y2={30}
+            stroke="white"
+            strokeWidth={1}
+            opacity={0.3}
           />
-        </mask>
-        <g mask="url(#maskForSinusoids)">
-          {SCALE.map((i) => (
-            <Sinusoid
-              key={i}
-              value={i}
-              selected={i === valueInt}
-              onTrack={i < valueInt}
-              width={width - PADDINGX - PADDINGX}
-              height={height}
-              paddingx={PADDINGX}
-            />
-          ))}
-        </g>
-      </svg>
+          <text x={width - PADDINGX + 4} y={height / 2} fill="white">
+            1
+          </text>
+          <line
+            x1={PADDINGX}
+            y1={height - 30}
+            x2={width - PADDINGX}
+            y2={height - 30}
+            stroke="white"
+            strokeWidth={1}
+            opacity={0.3}
+          />
+          <mask id="maskForSinusoids">
+            <rect x={PADDINGX} y={0} width={width - 2 * PADDINGX} height={height} fill="white" />
+          </mask>
+          <g mask="url(#maskForSinusoids)">
+            {SCALE.map((i) => (
+              <Sinusoid
+                key={i}
+                value={i}
+                selected={i === valueInt}
+                onTrack={i < valueInt}
+                width={width - 2 * PADDINGX}
+                height={height}
+                paddingx={PADDINGX}
+              />
+            ))}
+          </g>
+        </svg>
+      )}
     </div>
   )
 }

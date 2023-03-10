@@ -21,7 +21,6 @@ export function BarChart({ value }) {
 
   const scale = SCALE.map((v) => {
     const x1 = computeDistance(v)
-    console.log(x1)
     return (
       <g key={v}>
         <line
@@ -56,17 +55,6 @@ export function BarChart({ value }) {
   return (
     <div ref={wrapperRef} className="h-full relative">
       <svg height={height} width={width} className="absolute">
-        {/* line to delate */}
-        <line
-          x1={PADDINGX}
-          y1={30}
-          x2={width - PADDINGX}
-          y2={30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate */}
         {scale}
         <circle
           r={r}
@@ -79,17 +67,6 @@ export function BarChart({ value }) {
         />
         {track}
         <circle fill="white" r={r} cy={y0} cx={computeDistance(value)} />
-        {/* line to delate */}
-        <line
-          x1={PADDINGX}
-          y1={height - 30}
-          x2={width - PADDINGX}
-          y2={height - 30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate */}
       </svg>
     </div>
   )

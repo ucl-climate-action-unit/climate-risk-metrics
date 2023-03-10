@@ -3,8 +3,8 @@ import { useMeasure } from 'react-use'
 
 export function RotationChart({ value }) {
   const [wrapperRef, { width, height }] = useMeasure()
-  const RADIUS = Math.min(height - 60, width)
-  const RECT_WIDTH = 30
+  const RADIUS = Math.min(height, width / 2)
+  const RECT_WIDTH = width / 14
   const PADDING = 8
   const PADDINGX = 24
   const PADDINGY = 30
@@ -74,50 +74,6 @@ export function RotationChart({ value }) {
   return (
     <div ref={wrapperRef} className="h-full relative">
       <svg height={height} width={width} className="absolute ">
-        {/* line to delate top */}
-        <line
-          x1={PADDINGX}
-          y1={30}
-          x2={width - PADDINGX}
-          y2={30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate top*/}
-        {/* line to delate bottom*/}
-        <line
-          x1={PADDINGX}
-          y1={height - 30}
-          x2={width - PADDINGX}
-          y2={height - 30}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate bottom*/}
-        {/* line to delate left */}
-        <line
-          x1={PADDINGX}
-          y1={PADDINGY}
-          x2={PADDINGX}
-          y2={height - PADDINGY}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate left*/}
-        {/* line to delate right*/}
-        <line
-          x1={width - PADDINGX}
-          y1={PADDINGY}
-          x2={width - PADDINGX}
-          y2={height - PADDINGY}
-          stroke="white"
-          strokeWidth={1}
-          opacity={0.3}
-        />
-        {/* line to delate right*/}
         <rect
           x={xi1}
           y={yi1}

@@ -1,3 +1,7 @@
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+
 export function Paragraph({ value }) {
-  return <p className="mb-4">{value}</p>
+  console.log(value)
+  return <ReactMarkdown className="mb-4 rich-text">{value}</ReactMarkdown>
 }

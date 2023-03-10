@@ -8523,7 +8523,7 @@ react-is@^18.0.0:
 
 react-markdown@^8.0.5:
   version "8.0.5"
-  resolved "https://registry.npmjs.org/react-markdown/-/react-markdown-8.0.5.tgz"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.5.tgz#c9a70a33ca9aeeafb769c6582e7e38843b9d70ad"
   integrity sha512-jGJolWWmOWAvzf+xMdB9zwStViODyyFQhNB/bwCerbBKmrTmgmA599CGiOlP58OId1IMoIRsA8UdI1Lod4zb5A==
   dependencies:
     "@types/hast" "^2.0.0"

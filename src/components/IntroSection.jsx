@@ -26,7 +26,7 @@ export function IntroSection() {
         <div className="flex justify-between items-center">
           <h1 className="hidden md:block pt-4 font-bold">{intro.page_title}</h1>
           <Link
-            className="hidden md:block pt-4 font-bold underline"
+            className="hidden md:block pt-4 font-bold underline cursor-pointer"
             spy={true}
             smooth={true}
             offset={-80}

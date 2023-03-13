@@ -7,7 +7,7 @@ export function YearsViz({ id }) {
     <div
       className={`flex flex-wrap w-full gap-4 ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
-      } bg-opacity-10 p-6 rounded-lg lg:mb-14 mb-8`}
+      } bg-opacity-10 md:p-6 p-3 rounded-lg lg:mb-14 mb-8`}
     >
       {computeYearValues(id).map((row) => {
         const { year, value } = row
@@ -19,9 +19,6 @@ export function YearsViz({ id }) {
           )
         )
       })}
-      <CardMinimal id={id} year={4000} value={10} isMini={true}>
-        <CurveAmplitudeChart hasAxis={false} value={10} isMini={true} />
-      </CardMinimal>
     </div>
   )
 }

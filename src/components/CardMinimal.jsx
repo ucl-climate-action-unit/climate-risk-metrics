@@ -12,7 +12,7 @@ export function CardMinimal({ id, children, year, value, unit, isMini = false })
       >
         {children}
       </div>
-      <div className={`${isMini ? 'leading-5 text-center' : 'text-lg'}`}>
+      <div className={`${isMini ? 'leading-5 text-center' : 'text-lg'} w-full`}>
         <div className="font-bold">{year}</div>
         <div>
           {value}&nbsp;

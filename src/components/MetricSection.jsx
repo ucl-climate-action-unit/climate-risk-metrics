@@ -5,7 +5,7 @@ export function MetricSection({ id, content }) {
     <div>
       {content.map((row, index) => {
         return (
-          <div key={index}>
+          <div key={index} className="w-full">
             {(row.type === 'title' && <Title value={row.content} metric={id} />) ||
               (row.type === 'subtitle' && <Subtitle value={row.content} metric={id} />) ||
               (row.type === 'text' && <Paragraph value={row.content} />) ||

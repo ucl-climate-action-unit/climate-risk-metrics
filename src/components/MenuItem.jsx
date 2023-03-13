@@ -1,6 +1,9 @@
 import { Link } from 'react-scroll'
+import { useBreakpoints } from '../hooks/useBreakPoints'
 
 export function MenuItem({ id, label, closeMenu }) {
+  const { isMd } = useBreakpoints()
+
   return (
     <Link
       onClick={closeMenu}
@@ -20,7 +23,7 @@ export function MenuItem({ id, label, closeMenu }) {
       to={id}
       smooth={true}
     >
-      {label}
+      {!isMd ? label : label === 'About the project' ? null : label}
     </Link>
   )
 }

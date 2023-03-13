@@ -2,7 +2,7 @@ import { Element } from 'react-scroll/modules'
 import { MetricSection, Wrapper, MenuDesktop } from '.'
 import { SECTIONS } from '../utils/ids'
 
-export function DeepeningSection({}) {
+export function DeepeningSection() {
   return (
     <Wrapper classes="bg-light pt-20">
       <div className="flex lg:gap-6">

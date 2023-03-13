@@ -14,9 +14,23 @@ import UWI_Usa from '../data/UWI_USA.json'
 
 import { round } from 'lodash'
 const data = {
-  EEI: [EEI_Global],
-  STC: [STC_Global, STC_Australia, STC_East_Asia, STC_Europe, STC_Russia, STC_Usa],
-  UWI: [UWI_Global, UWI_Australia, UWI_East_Asia, UWI_Europe, UWI_Russia, UWI_Usa],
+  EEI: { Global: EEI_Global },
+  STC: {
+    Global: STC_Global,
+    Australia: STC_Australia,
+    'East Asia': STC_East_Asia,
+    Europe: STC_Europe,
+    Russia: STC_Russia,
+    USA: STC_Usa,
+  },
+  UWI: {
+    Global: UWI_Global,
+    Australia: UWI_Australia,
+    'East Asia': UWI_East_Asia,
+    Europe: UWI_Europe,
+    Russia: UWI_Russia,
+    Usa: UWI_Usa,
+  },
 }
 
 export const formatValue = (value, metricId) => round(parseFloat(value), metricId === 'UWI' ? 1 : 2)
@@ -27,17 +41,27 @@ const computeCurrent = (prev, current) => {
 
 export const computeGlobalValueByYear = (year, metricId) => {
   return formatValue(
-    data[metricId][0]
+    data[metricId]['Global']
       .filter((d) => +d.year === +year)
       .reduce((prev, current) => (+prev.month > +current.month ? prev : current)).value,
     metricId
   )
 }
-export const computeCurrentRegionValues = (metricId) => {}
+export const computeCurrentRegionValues = (metricId) => {
+  return Object.entries(data[metricId]).map((d) => {
+    return {
+      region: d[0],
+      value: formatValue(
+        d[1].reduce((prev, current) => computeCurrent(prev, current)).value,
+        metricId
+      ),
+    }
+  })
+}
 export const computeYearValues = (metricId) => {
   let decemberValues = []
-  data[metricId].forEach((datum) => {
-    const lastValue = data[metricId][0]
+  data[metricId]['Global'].forEach((datum) => {
+    const lastValue = data[metricId]['Global']
       .filter((d) => d.year === datum.year)
       .reduce((prev, current) => {
         return +prev.month > +current.month ? prev : current
@@ -50,7 +74,7 @@ export const computeYearValues = (metricId) => {
 }
 
 export const computeCurrentGlobalValue = (metricId) => {
-  const currentGlobalDatum = data[metricId][0].reduce((prev, current) =>
+  const currentGlobalDatum = data[metricId]['Global'].reduce((prev, current) =>
     computeCurrent(prev, current)
   )
   return formatValue(currentGlobalDatum.value, metricId)

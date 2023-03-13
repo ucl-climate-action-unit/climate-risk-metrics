@@ -1,7 +1,7 @@
 import { scaleLinear } from 'd3'
 import { useMeasure } from 'react-use'
 
-export function BarChart({ value }) {
+export function BarChart({ value, hasAxis = true }) {
   const [wrapperRef, { width, height }] = useMeasure()
   const PADDINGX = 24
   const PADDINGY = 30
@@ -55,7 +55,7 @@ export function BarChart({ value }) {
   return (
     <div ref={wrapperRef} className="h-full relative">
       <svg height={height} width={width} className="absolute">
-        {scale}
+        {hasAxis && scale}
         <circle
           r={r}
           cy={y0}

@@ -2,19 +2,18 @@ import { useMeasure } from 'react-use'
 import { Sinusoid } from './Sinusoid'
 import { round } from 'lodash'
 
-export function CurveAmplitudeChart({ axis = true, value }) {
+export function CurveAmplitudeChart({ hasAxis = true, value, isMini = false }) {
   const [wrapperRef, { width, height }] = useMeasure()
-  const PADDINGX = 24
-  const PADDINGY = 30
+  const PADDINGX = isMini ? 0 : 24
   // const SPACE_FOR_SCALE = 24
-  const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  const valueInt = round(value, 0)
+  const SCALE = isMini ? [1] : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const valueInt = round(value, 1)
   return (
     <div ref={wrapperRef} className="h-full relative">
       {width > 0 && height > 0 && (
         <svg width={width} height={height} className="absolute ">
           {/* coordinates for scale are computed empirically */}
-          {axis && (
+          {hasAxis && (
             <>
               <text x={width - PADDINGX + 4} y={height * 0.125} fill="white">
                 10
@@ -42,19 +41,30 @@ export function CurveAmplitudeChart({ axis = true, value }) {
               />
             </>
           )}
-          <mask id="maskForSinusoids">
-            <rect x={PADDINGX} y={0} width={width - 2 * PADDINGX} height={height} fill="white" />
-          </mask>
-          <g mask="url(#maskForSinusoids)">
+          {!isMini && (
+            <mask id="maskForSinusoids">
+              <rect x={PADDINGX} y={0} width={width - 2 * PADDINGX} height={height} fill="white" />
+            </mask>
+          )}
+          <g mask={`${!isMini ? 'url(#maskForSinusoids)' : ''}`}>
+            <Sinusoid
+              isScale={false}
+              value={value}
+              width={width - 2 * PADDINGX}
+              height={height}
+              paddingx={PADDINGX}
+              isMini={isMini}
+            />
             {SCALE.map((i) => (
               <Sinusoid
+                isScale={true}
                 key={i}
                 value={i}
-                selected={i === valueInt}
                 onTrack={i < valueInt}
                 width={width - 2 * PADDINGX}
                 height={height}
                 paddingx={PADDINGX}
+                isMini={isMini}
               />
             ))}
           </g>

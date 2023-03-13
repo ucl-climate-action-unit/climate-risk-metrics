@@ -1,11 +1,10 @@
 import { useMeasure } from 'react-use'
 
-export function CardMinimal({ id, children, year, value, unit }) {
+export function CardMinimal({ id, children, year, value, unit, isMini = false }) {
   const [ref, { width }] = useMeasure()
   return (
-    <div className="w-full">
+    <div ref={ref} className={`${isMini ? 'w-14' : 'w-full'}`}>
       <div
-        ref={ref}
         style={{ height: width }}
         className={`${
           id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
@@ -13,7 +12,7 @@ export function CardMinimal({ id, children, year, value, unit }) {
       >
         {children}
       </div>
-      <div className="text-lg">
+      <div className={`${isMini ? 'leading-5 text-center' : 'text-lg'}`}>
         <div className="font-bold">{year}</div>
         <div>
           {value}&nbsp;

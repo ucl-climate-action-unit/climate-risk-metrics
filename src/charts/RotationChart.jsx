@@ -1,7 +1,7 @@
 import { scaleLinear } from 'd3'
 import { useMeasure } from 'react-use'
 
-export function RotationChart({ value, axis = true }) {
+export function RotationChart({ value, hasAxis = true, hasTrack = true }) {
   const [wrapperRef, { width, height }] = useMeasure()
   const RADIUS = Math.min(height, width / 2)
   const RECT_WIDTH = width / 14
@@ -84,7 +84,7 @@ export function RotationChart({ value, axis = true }) {
           strokeWidth={1}
           strokeDasharray={3.75}
         />
-        {track}
+        {hasTrack && track}
         <rect
           x={xi1}
           y={yCenter - yRectCenter}
@@ -93,7 +93,7 @@ export function RotationChart({ value, axis = true }) {
           transform={`rotate(${computeRadiantAngle(value)},${xi1 + xRectCenter},${yi1 + RADIUS})`}
           fill="rgb(255,255,255)"
         />
-        {axis && scale}
+        {hasAxis && scale}
       </svg>
     </div>
   )

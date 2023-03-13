@@ -8,7 +8,7 @@ const filterGlobal = (data) => {
   return data.filter((d) => d.region === 'global')
 }
 
-const formatValue = (value, metricId) => round(parseFloat(value), metricId === 'UWI' ? 1 : 2)
+export const formatValue = (value, metricId) => round(parseFloat(value), metricId === 'UWI' ? 1 : 2)
 
 const computeCurrent = (prev, current) => {
   return +prev.year >= +current.year && +prev.month > +current.month ? prev : current
@@ -32,7 +32,7 @@ export const computeYearValues = (metricId) => {
         return +prev.month > +current.month ? prev : current
       })
     if (!decemberValues.find((e) => e.year === datum.year)) {
-      decemberValues.push(lastValue)
+      decemberValues.push({ ...lastValue, value: formatValue(lastValue.value, metricId) })
     }
   })
   return decemberValues

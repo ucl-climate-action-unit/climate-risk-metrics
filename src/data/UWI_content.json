@@ -21,7 +21,7 @@
   },
   {
     "type": "dataviz",
-    "content": "UNUSUALNESS_REGION"
+    "content": "REGIONS"
   },
   {
     "type": "text",
@@ -35,17 +35,14 @@
     "type": "subtitle",
     "content": "Imbalance per decade"
   },
-  {
-    "type": "dataviz",
-    "content": "UNUSUALNESS_DECADE"
-  },
+  {},
   {
     "type": "subtitle",
     "content": "Imbalance over the years"
   },
   {
     "type": "dataviz",
-    "content": "UNUSUALNESS_YEARS"
+    "content": "YEARS"
   },
   {
     "type": "text",

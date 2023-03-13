@@ -17,7 +17,7 @@ export function DecadesViz({ id }) {
             value={value}
             unit={fixed_content[`card_${id}_number_detail`]}
           >
-            {id === 'EEI' && <RotationChart axis={false} value={value} />}
+            {id === 'EEI' && <RotationChart hasAxis={false} value={value} hasTrack={false} />}
           </CardMinimal>
         )
       })}

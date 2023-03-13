@@ -74,15 +74,11 @@
   {},
   {
     "type": "dataviz",
-    "content": "IMBALANCE_DECADE"
+    "content": "DECADE"
   },
   {
     "type": "subtitle",
     "content": "Imbalance over the years"
-  },
-  {
-    "type": "dataviz",
-    "content": "IMBALANCE_YEARS"
   },
   {
     "type": "text",
@@ -105,5 +101,6 @@
     "type": "image",
     "content": "https://drive.google.com/file/f/"
   },
+  {},
   {}
 ]

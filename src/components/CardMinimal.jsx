@@ -25,7 +25,7 @@ export function CardMinimal({ id, children, year, value, unit, isMini = false, t
           {!isMini && <span>{unit}</span>}
         </div>
         {total && (
-          <div className="w-fit mt-2 px-2 py-1 bg-STC bg-opacity-10 rounded-lg font-bold text-STC">
+          <div className="w-fit mt-2 px-2 py-1 bg-STC bg-opacity-10 rounded-lg font-bold text-STC text-sm">
             {total}
           </div>
         )}

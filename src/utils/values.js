@@ -49,12 +49,11 @@ export const computeGlobalValueByYear = (year, metricId) => {
 }
 export const computeCurrentRegionValues = (metricId) => {
   return Object.entries(data[metricId]).map((d) => {
+    const lastRow = d[1].reduce((prev, current) => computeCurrent(prev, current))
     return {
       region: d[0],
-      value: formatValue(
-        d[1].reduce((prev, current) => computeCurrent(prev, current)).value,
-        metricId
-      ),
+      value: formatValue(lastRow.value, metricId),
+      total: formatValue(lastRow.total, metricId),
     }
   })
 }

@@ -5,7 +5,7 @@
   "summary_EEI_unit": "Watt/m² of energy.",
   "summary_STC": "This causes temperatures to rise by",
   "summary_STC_unit": "°C per decade",
-  "summary_UWI": "and makes out-of-the-ordinary events",
+  "summary_UWI": "and makes unusual weather events",
   "summary_UWI_unit": "times more frequent.",
   "card_EEI_inf_name": "Imbalance",
   "card_EEI_sci_name": "Earth’s Energy Imbalance",
@@ -25,8 +25,12 @@
   "card_UWI_legend1": "Current",
   "card_UWI_legend2": "Natural",
   "UWI_short_description": "The level of unusual, record-breaking weather events resulting from climate change.",
+  "card_mini_EEI_detail": "Watt/m²",
+  "card_mini_STC_detail": "°C/dec",
+  "card_mini_STC_detail_2": "°C total",
+  "card_mini_UWI_detail": "times",
   "link_to_metric_explainer": "Explore the metric",
   "foooter_title": "About the project",
   "footer_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n",
-  "credits": "a project by"
+  "credits": "A project by"
 }

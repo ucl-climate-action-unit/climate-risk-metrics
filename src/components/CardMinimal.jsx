@@ -13,14 +13,19 @@ export function CardMinimal({ id, children, year, value, unit, isMini = false, t
         {children}
       </div>
       <div className={`${isMini ? 'leading-5 text-center' : 'text-lg'}`}>
-        <div className="font-bold">{year}</div>
+        <div
+          className="font-bold"
+          style={{ textTransform: year === 'Usa' || year === 'usa' ? 'uppercase' : null }}
+        >
+          {year}
+        </div>
         <div>
           {id === 'UWI' ? 'x' : ''}
           {value}&#160;
           {!isMini && <span>{unit}</span>}
         </div>
         {total && (
-          <div className="w-fit mt-2 px-2 py-1 bg-STC bg-opacity-10 rounded-lg font-bold text-STC">
+          <div className="w-fit mt-2 px-2 py-1 bg-STC bg-opacity-10 rounded-lg font-bold text-STC text-sm">
             {total}
           </div>
         )}

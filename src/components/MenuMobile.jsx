@@ -9,7 +9,7 @@ export function MenuMobile() {
   return (
     <div className="md:hidden bg-dark text-white fixed w-full z-10">
       <div className="z-50 flex justify-between items-center px-2">
-        <h1 className="py-3 text-base font-bold">{intro.page_title} </h1>
+        <h1 className="py-3 text-xs font-bold sm:text-base">{intro.page_title} </h1>
         <div onClick={() => setIsOpen(!isOpen)}>{!isOpen ? <BurgerMenuSVG /> : <CloseSVG />}</div>
       </div>
       <div

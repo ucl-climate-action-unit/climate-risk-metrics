@@ -69,24 +69,7 @@
   },
   {
     "type": "text",
-    "content": "When light from the sun reaches Earth, part of it is absorbed by dark surfaces. It turns into heat energy warming up the air, land and sea. It evaporates water to form clouds, or fuels wind energy and storms. Eventually, as heat, it might escape the Earth's system and radiate back into space. A proportion of it gets reflected back into space by clouds or shiny, light surfaces like snow and desert sands.\r"
-  },
-  {},
-  {
-    "type": "dataviz",
-    "content": "DECADE"
-  },
-  {
-    "type": "subtitle",
-    "content": "Imbalance over the years"
-  },
-  {
-    "type": "text",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-  },
-  {
-    "type": "text",
-    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "content": "text"
   },
   {
     "type": "text",

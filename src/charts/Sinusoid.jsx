@@ -1,4 +1,5 @@
 import { scaleLinear } from 'd3'
+import { range } from 'lodash'
 export function Sinusoid({
   value,
   width,
@@ -18,7 +19,7 @@ export function Sinusoid({
     .range([isMini ? 1 : 10, height / 2])
   let path = `M 0,${yStartingPoint}`
 
-  ;[...Array(NUM_PEAKS).keys()].forEach((i) => {
+  range(NUM_PEAKS).forEach((i) => {
     const f = i % 2 ? -1 : 1
     path = path.concat(
       ` C ${k * i + b},${yStartingPoint + computeAmplitude(value) * f} ${k * (i + 1) - b},${

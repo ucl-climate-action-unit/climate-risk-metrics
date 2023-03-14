@@ -1,5 +1,5 @@
 import { Wrapper } from '.'
-import { Data4ChangeLOGO, UCLClimateActionUnitLOGO } from '../icons'
+import { Data4ChangeLOGO, UCLClimateActionUnitLOGO, AccuratLOGO } from '../icons'
 import dataFixed from '../data/fixed_content.json'
 import { Element } from 'react-scroll/modules'
 
@@ -16,11 +16,22 @@ export function Footer() {
               <div>{footer_body}</div>
             </div>
           </Element>
-          <div className="flex items-center">
-            <UCLClimateActionUnitLOGO />
-            <Data4ChangeLOGO />
-          </div>
           <p>{credits}</p>
+          <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:gap-5">
+            <div className="h-6 flex items-center">
+              <UCLClimateActionUnitLOGO />
+            </div>
+            <div className="h-6 flex items-center">
+              <a href="https://www.data4chan.ge/" target="_blank" rel="noreferrer">
+                <Data4ChangeLOGO />
+              </a>
+            </div>
+            <div className="h-6 flex items-center">
+              <a href="https://www.accurat.it/" target="_blank" rel="noreferrer">
+                <AccuratLOGO />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>

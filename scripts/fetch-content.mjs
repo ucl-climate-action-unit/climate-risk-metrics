@@ -43,7 +43,6 @@ axios
           type: type,
           content: row.values[1]?.formattedValue,
           alt: type === 'image' ? row.values[2]?.formattedValue : undefined,
-          metric: sheetName === 'decades_content' ? row.values[2]?.formattedValue : undefined,
         }
       })
     }
@@ -77,17 +76,7 @@ axios
       JSON.stringify(mapIterativeContent('UWI_content'), null, 2)
     )
     fs.writeFileSync(
-      'src/data/decades_content.json',
-      JSON.stringify(mapIterativeContent('decades_content'), null, 2)
-    )
-    fs.writeFileSync(
       'src/data/about_the_metrics.json',
       JSON.stringify(mapIterativeContent('about_the_metrics'), null, 2)
     )
-
-    fs.writeFileSync('src/data/EEI_data.json', JSON.stringify(mapData('EEI_data'), null, 2))
-    fs.writeFileSync('src/data/STC_data.json', JSON.stringify(mapData('STC_data'), null, 2))
-    fs.writeFileSync('src/data/UWI_data.json', JSON.stringify(mapData('UWI_data'), null, 2))
-    // fs.writeFileSync('src/data/STC_data.json', JSON.stringify(mapData('STC_data'), null, 2))
-    // fs.writeFileSync('src/data/UWI_data.json', JSON.stringify(mapData('UWI_data'), null, 2))
   })

@@ -1,252 +1,202 @@
 [
   {
     "year": "year",
-    "region": "region",
     "value": "rbindex"
   },
   {
     "year": "1973",
-    "region": "global",
     "value": "1.191243758"
   },
   {
     "year": "1974",
-    "region": "global",
     "value": "1.007908285"
   },
   {
     "year": "1975",
-    "region": "global",
     "value": "1.153758602"
   },
   {
     "year": "1976",
-    "region": "global",
     "value": "1.008052973"
   },
   {
     "year": "1977",
-    "region": "global",
     "value": "1.361679144"
   },
   {
     "year": "1978",
-    "region": "global",
     "value": "1.131888447"
   },
   {
     "year": "1979",
-    "region": "global",
     "value": "1.129770367"
   },
   {
     "year": "1980",
-    "region": "global",
     "value": "1.550157229"
   },
   {
     "year": "1981",
-    "region": "global",
     "value": "1.187715938"
   },
   {
     "year": "1982",
-    "region": "global",
     "value": "1.087435911"
   },
   {
     "year": "1983",
-    "region": "global",
     "value": "1.441917837"
   },
   {
     "year": "1984",
-    "region": "global",
     "value": "0.953959451"
   },
   {
     "year": "1985",
-    "region": "global",
     "value": "1.042308477"
   },
   {
     "year": "1986",
-    "region": "global",
     "value": "1.503506303"
   },
   {
     "year": "1987",
-    "region": "global",
     "value": "1.472109816"
   },
   {
     "year": "1988",
-    "region": "global",
     "value": "1.723497419"
   },
   {
     "year": "1989",
-    "region": "global",
     "value": "1.651751243"
   },
   {
     "year": "1990",
-    "region": "global",
     "value": "1.736057296"
   },
   {
     "year": "1991",
-    "region": "global",
     "value": "1.022684585"
   },
   {
     "year": "1992",
-    "region": "global",
     "value": "1.196838185"
   },
   {
     "year": "1993",
-    "region": "global",
     "value": "0.908660084"
   },
   {
     "year": "1994",
-    "region": "global",
     "value": "1.451015611"
   },
   {
     "year": "1995",
-    "region": "global",
     "value": "1.567120508"
   },
   {
     "year": "1996",
-    "region": "global",
     "value": "1.338643104"
   },
   {
     "year": "1997",
-    "region": "global",
     "value": "1.353315337"
   },
   {
     "year": "1998",
-    "region": "global",
     "value": "2.458047952"
   },
   {
     "year": "1999",
-    "region": "global",
     "value": "1.773187773"
   },
   {
     "year": "2000",
-    "region": "global",
     "value": "2.155875924"
   },
   {
     "year": "2001",
-    "region": "global",
     "value": "1.276925603"
   },
   {
     "year": "2002",
-    "region": "global",
     "value": "2.22667147"
   },
   {
     "year": "2003",
-    "region": "global",
     "value": "1.985801611"
   },
   {
     "year": "2004",
-    "region": "global",
     "value": "1.39754392"
   },
   {
     "year": "2005",
-    "region": "global",
     "value": "1.794451564"
   },
   {
     "year": "2006",
-    "region": "global",
     "value": "2.091381187"
   },
   {
     "year": "2007",
-    "region": "global",
     "value": "2.48973068"
   },
   {
     "year": "2008",
-    "region": "global",
     "value": "1.424696575"
   },
   {
     "year": "2009",
-    "region": "global",
     "value": "1.497075009"
   },
   {
     "year": "2010",
-    "region": "global",
     "value": "2.381123398"
   },
   {
     "year": "2011",
-    "region": "global",
     "value": "1.876519598"
   },
   {
     "year": "2012",
-    "region": "global",
     "value": "3.168967485"
   },
   {
     "year": "2013",
-    "region": "global",
     "value": "1.672702709"
   },
   {
     "year": "2014",
-    "region": "global",
     "value": "1.527347988"
   },
   {
     "year": "2015",
-    "region": "global",
     "value": "2.829210699"
   },
   {
     "year": "2016",
-    "region": "global",
     "value": "2.182077084"
   },
   {
     "year": "2017",
-    "region": "global",
     "value": "2.405440358"
   },
   {
     "year": "2018",
-    "region": "global",
     "value": "2.625967714"
   },
   {
     "year": "2019",
-    "region": "global",
     "value": "3.213580814"
   },
   {
     "year": "2020",
-    "region": "global",
     "value": "3.206698119"
   },
   {
     "year": "2021",
-    "region": "global",
     "value": "3.464807574"
   }
 ]

@@ -2,1478 +2,1212 @@
   {
     "year": "year",
     "month": "month",
-    "region": "region",
     "value": "average"
   },
   {
     "year": "2000",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2000",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2000",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2000",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2000",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2000",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2000",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2000",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2000",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2000",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2001",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2001",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2001",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2001",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2001",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2001",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2001",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2001",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2001",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2001",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2001",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2001",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2002",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2002",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2002",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2002",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2002",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2002",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2002",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2002",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2002",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2002",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2002",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2002",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2003",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2003",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2003",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2003",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2003",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2003",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2003",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2003",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2003",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2003",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2003",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2003",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2004",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2004",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2004",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2004",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2004",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2004",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2004",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2004",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2004",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2004",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2004",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2004",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2005",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2005",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2005",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2005",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2005",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2005",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2005",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2005",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2005",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2005",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2005",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2005",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2006",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2006",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2006",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2006",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2006",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2006",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2006",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2006",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2006",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2006",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2006",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2006",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2007",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2007",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2007",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2007",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2007",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2007",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2007",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2007",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2007",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2007",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2007",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2007",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2008",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2008",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2008",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2008",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2008",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2008",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2008",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2008",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2008",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2008",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2008",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2008",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2009",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2009",
-    "month": "2",
-    "region": "global"
+    "month": "2"
   },
   {
     "year": "2009",
-    "month": "3",
-    "region": "global"
+    "month": "3"
   },
   {
     "year": "2009",
-    "month": "4",
-    "region": "global"
+    "month": "4"
   },
   {
     "year": "2009",
-    "month": "5",
-    "region": "global"
+    "month": "5"
   },
   {
     "year": "2009",
-    "month": "6",
-    "region": "global"
+    "month": "6"
   },
   {
     "year": "2009",
-    "month": "7",
-    "region": "global"
+    "month": "7"
   },
   {
     "year": "2009",
-    "month": "8",
-    "region": "global"
+    "month": "8"
   },
   {
     "year": "2009",
-    "month": "9",
-    "region": "global"
+    "month": "9"
   },
   {
     "year": "2009",
-    "month": "10",
-    "region": "global"
+    "month": "10"
   },
   {
     "year": "2009",
-    "month": "11",
-    "region": "global"
+    "month": "11"
   },
   {
     "year": "2009",
-    "month": "12",
-    "region": "global"
+    "month": "12"
   },
   {
     "year": "2010",
-    "month": "1",
-    "region": "global"
+    "month": "1"
   },
   {
     "year": "2010",
     "month": "2",
-    "region": "global",
     "value": "0.5482119387"
   },
   {
     "year": "2010",
     "month": "3",
-    "region": "global",
     "value": "0.5448165389"
   },
   {
     "year": "2010",
     "month": "4",
-    "region": "global",
     "value": "0.5448165389"
   },
   {
     "year": "2010",
     "month": "5",
-    "region": "global",
     "value": "0.5454956188"
   },
   {
     "year": "2010",
     "month": "6",
-    "region": "global",
     "value": "0.5496029573"
   },
   {
     "year": "2010",
     "month": "7",
-    "region": "global",
     "value": "0.5435761227"
   },
   {
     "year": "2010",
     "month": "8",
-    "region": "global",
     "value": "0.5356818182"
   },
   {
     "year": "2010",
     "month": "9",
-    "region": "global",
     "value": "0.5363389923"
   },
   {
     "year": "2010",
     "month": "10",
-    "region": "global",
     "value": "0.5347261774"
   },
   {
     "year": "2010",
     "month": "11",
-    "region": "global",
     "value": "0.521007667"
   },
   {
     "year": "2010",
     "month": "12",
-    "region": "global",
     "value": "0.5176971522"
   },
   {
     "year": "2011",
     "month": "1",
-    "region": "global",
     "value": "0.506577218"
   },
   {
     "year": "2011",
     "month": "2",
-    "region": "global",
     "value": "0.5026670318"
   },
   {
     "year": "2011",
     "month": "3",
-    "region": "global",
     "value": "0.4974041621"
   },
   {
     "year": "2011",
     "month": "4",
-    "region": "global",
     "value": "0.5091511501"
   },
   {
     "year": "2011",
     "month": "5",
-    "region": "global",
     "value": "0.525958379"
   },
   {
     "year": "2011",
     "month": "6",
-    "region": "global",
     "value": "0.5234939759"
   },
   {
     "year": "2011",
     "month": "7",
-    "region": "global",
     "value": "0.5199288061"
   },
   {
     "year": "2011",
     "month": "8",
-    "region": "global",
     "value": "0.5267196057"
   },
   {
     "year": "2011",
     "month": "9",
-    "region": "global",
     "value": "0.5168619934"
   },
   {
     "year": "2011",
     "month": "10",
-    "region": "global",
     "value": "0.5339238773"
   },
   {
     "year": "2011",
     "month": "11",
-    "region": "global",
     "value": "0.5364704272"
   },
   {
     "year": "2011",
     "month": "12",
-    "region": "global",
     "value": "0.5338389923"
   },
   {
     "year": "2012",
     "month": "1",
-    "region": "global",
     "value": "0.5420728368"
   },
   {
     "year": "2012",
     "month": "2",
-    "region": "global",
     "value": "0.5658499863"
   },
   {
     "year": "2012",
     "month": "3",
-    "region": "global",
     "value": "0.5653408158"
   },
   {
     "year": "2012",
     "month": "4",
-    "region": "global",
     "value": "0.5816835478"
   },
   {
     "year": "2012",
     "month": "5",
-    "region": "global",
     "value": "0.5946673967"
   },
   {
     "year": "2012",
     "month": "6",
-    "region": "global",
     "value": "0.6064932932"
   },
   {
     "year": "2012",
     "month": "7",
-    "region": "global",
     "value": "0.6232959212"
   },
   {
     "year": "2012",
     "month": "8",
-    "region": "global",
     "value": "0.6413714755"
   },
   {
     "year": "2012",
     "month": "9",
-    "region": "global",
     "value": "0.6458061867"
   },
   {
     "year": "2012",
     "month": "10",
-    "region": "global",
     "value": "0.6463153572"
   },
   {
     "year": "2012",
     "month": "11",
-    "region": "global",
     "value": "0.6547741582"
   },
   {
     "year": "2012",
     "month": "12",
-    "region": "global",
     "value": "0.6637695045"
   },
   {
     "year": "2013",
     "month": "1",
-    "region": "global",
     "value": "0.6568108404"
   },
   {
     "year": "2013",
     "month": "2",
-    "region": "global",
     "value": "0.6543580619"
   },
   {
     "year": "2013",
     "month": "3",
-    "region": "global",
     "value": "0.6626745141"
   },
   {
     "year": "2013",
     "month": "4",
-    "region": "global",
     "value": "0.6632493841"
   },
   {
     "year": "2013",
     "month": "5",
-    "region": "global",
     "value": "0.6739419655"
   },
   {
     "year": "2013",
     "month": "6",
-    "region": "global",
     "value": "0.6729564741"
   },
   {
     "year": "2013",
     "month": "7",
-    "region": "global",
     "value": "0.677539009"
   },
   {
     "year": "2013",
     "month": "8",
-    "region": "global",
     "value": "0.6757569121"
   },
   {
     "year": "2013",
     "month": "9",
-    "region": "global",
     "value": "0.6739501779"
   },
   {
     "year": "2013",
     "month": "10",
-    "region": "global",
     "value": "0.6736107309"
   },
   {
     "year": "2013",
     "month": "11",
-    "region": "global",
     "value": "0.674514098"
   },
   {
     "year": "2013",
     "month": "12",
-    "region": "global",
     "value": "0.6759567479"
   },
   {
     "year": "2014",
     "month": "1",
-    "region": "global",
     "value": "0.668913222"
   },
   {
     "year": "2014",
     "month": "2",
-    "region": "global",
     "value": "0.6611664841"
   },
   {
     "year": "2014",
     "month": "3",
-    "region": "global",
     "value": "0.6732201533"
   },
   {
     "year": "2014",
     "month": "4",
-    "region": "global",
     "value": "0.672973713"
   },
   {
     "year": "2014",
     "month": "5",
-    "region": "global",
     "value": "0.6910542169"
   },
   {
     "year": "2014",
     "month": "6",
-    "region": "global",
     "value": "0.6982831325"
   },
   {
     "year": "2014",
     "month": "7",
-    "region": "global",
     "value": "0.6851259584"
   },
   {
     "year": "2014",
     "month": "8",
-    "region": "global",
     "value": "0.6932749179"
   },
   {
     "year": "2014",
     "month": "9",
-    "region": "global",
     "value": "0.6918784228"
   },
   {
     "year": "2014",
     "month": "10",
-    "region": "global",
     "value": "0.6945098576"
   },
   {
     "year": "2014",
     "month": "11",
-    "region": "global",
     "value": "0.6937705367"
   },
   {
     "year": "2014",
     "month": "12",
-    "region": "global",
     "value": "0.6823959474"
   },
   {
     "year": "2015",
     "month": "1",
-    "region": "global",
     "value": "0.6770481928"
   },
   {
     "year": "2015",
     "month": "2",
-    "region": "global",
     "value": "0.6877053669"
   },
   {
     "year": "2015",
     "month": "3",
-    "region": "global",
     "value": "0.6920345016"
   },
   {
     "year": "2015",
     "month": "4",
-    "region": "global",
     "value": "0.7018921139"
   },
   {
     "year": "2015",
     "month": "5",
-    "region": "global",
     "value": "0.7020618839"
   },
   {
     "year": "2015",
     "month": "6",
-    "region": "global",
     "value": "0.7103587076"
   },
   {
     "year": "2015",
     "month": "7",
-    "region": "global",
     "value": "0.7255531216"
   },
   {
     "year": "2015",
     "month": "8",
-    "region": "global",
     "value": "0.7401533406"
   },
   {
     "year": "2015",
     "month": "9",
-    "region": "global",
     "value": "0.7473822563"
   },
   {
     "year": "2015",
     "month": "10",
-    "region": "global",
     "value": "0.7544277108"
   },
   {
     "year": "2015",
     "month": "11",
-    "region": "global",
     "value": "0.7571385542"
   },
   {
     "year": "2015",
     "month": "12",
-    "region": "global",
     "value": "0.7496686747"
   },
   {
     "year": "2016",
     "month": "1",
-    "region": "global",
     "value": "0.7413499452"
   },
   {
     "year": "2016",
     "month": "2",
-    "region": "global",
     "value": "0.7288146729"
   },
   {
     "year": "2016",
     "month": "3",
-    "region": "global",
     "value": "0.7265234054"
   },
   {
     "year": "2016",
     "month": "4",
-    "region": "global",
     "value": "0.7191322201"
   },
   {
     "year": "2016",
     "month": "5",
-    "region": "global",
     "value": "0.7137859294"
   },
   {
     "year": "2016",
     "month": "6",
-    "region": "global",
     "value": "0.7279113058"
   },
   {
     "year": "2016",
     "month": "7",
-    "region": "global",
     "value": "0.7378401314"
   },
   {
     "year": "2016",
     "month": "8",
-    "region": "global",
     "value": "0.7479386805"
   },
   {
     "year": "2016",
     "month": "9",
-    "region": "global",
     "value": "0.7503202847"
   },
   {
     "year": "2016",
     "month": "10",
-    "region": "global",
     "value": "0.7576183958"
   },
   {
     "year": "2016",
     "month": "11",
-    "region": "global",
     "value": "0.7616424856"
   },
   {
     "year": "2016",
     "month": "12",
-    "region": "global",
     "value": "0.768176841"
   },
   {
     "year": "2017",
     "month": "1",
-    "region": "global",
     "value": "0.7870161511"
   },
   {
     "year": "2017",
     "month": "2",
-    "region": "global",
     "value": "0.795600876"
   },
   {
     "year": "2017",
     "month": "3",
-    "region": "global",
     "value": "0.807142075"
   },
   {
     "year": "2017",
     "month": "4",
-    "region": "global",
     "value": "0.8073063236"
   },
   {
     "year": "2017",
     "month": "5",
-    "region": "global",
     "value": "0.8106159321"
   },
   {
     "year": "2017",
     "month": "6",
-    "region": "global",
     "value": "0.812915412"
   },
   {
     "year": "2017",
     "month": "7",
-    "region": "global",
     "value": "0.8192800438"
   },
   {
     "year": "2017",
     "month": "8",
-    "region": "global",
     "value": "0.8246263345"
   },
   {
     "year": "2017",
     "month": "9",
-    "region": "global",
     "value": "0.8305392828"
   },
   {
     "year": "2017",
     "month": "10",
-    "region": "global",
     "value": "0.8282480153"
   },
   {
     "year": "2017",
     "month": "11",
-    "region": "global",
     "value": "0.8361319463"
   },
   {
     "year": "2017",
     "month": "12",
-    "region": "global",
     "value": "0.8415630988"
   },
   {
     "year": "2018",
     "month": "1",
-    "region": "global",
     "value": "0.8438543663"
   },
   {
     "year": "2018",
     "month": "2",
-    "region": "global",
     "value": "0.8475383352"
   },
   {
     "year": "2018",
     "month": "3",
-    "region": "global",
     "value": "0.8402382256"
   },
   {
     "year": "2018",
     "month": "4",
-    "region": "global",
     "value": "0.8500958379"
   },
   {
     "year": "2018",
     "month": "5",
-    "region": "global",
     "value": "0.847888828"
   },
   {
     "year": "2018",
     "month": "6",
-    "region": "global",
     "value": "0.8401670318"
   },
   {
     "year": "2018",
     "month": "7",
-    "region": "global",
     "value": "0.836347207"
   },
   {
     "year": "2018",
     "month": "8",
-    "region": "global",
     "value": "0.8283680175"
   },
   {
     "year": "2018",
     "month": "9",
-    "region": "global",
     "value": "0.8375684556"
   },
   {
     "year": "2018",
     "month": "10",
-    "region": "global",
     "value": "0.8402847755"
   },
   {
     "year": "2018",
     "month": "11",
-    "region": "global",
     "value": "0.8533461117"
   },
   {
     "year": "2018",
     "month": "12",
-    "region": "global",
     "value": "0.8542798467"
   },
   {
     "year": "2019",
     "month": "1",
-    "region": "global",
     "value": "0.8539403067"
   },
   {
     "year": "2019",
     "month": "2",
-    "region": "global",
     "value": "0.8550136911"
   },
   {
     "year": "2019",
     "month": "3",
-    "region": "global",
     "value": "0.8542497262"
   },
   {
     "year": "2019",
     "month": "4",
-    "region": "global",
     "value": "0.8566319825"
   },
   {
     "year": "2019",
     "month": "5",
-    "region": "global",
     "value": "0.8565470975"
   },
   {
     "year": "2019",
     "month": "6",
-    "region": "global",
     "value": "0.8493181818"
   },
   {
     "year": "2019",
     "month": "7",
-    "region": "global",
     "value": "0.8548357065"
   },
   {
     "year": "2019",
     "month": "8",
-    "region": "global",
     "value": "0.8557694414"
   },
   {
     "year": "2019",
     "month": "9",
-    "region": "global",
     "value": "0.867269989"
   },
   {
     "year": "2019",
     "month": "10",
-    "region": "global",
     "value": "0.883652793"
   },
   {
     "year": "2019",
     "month": "11",
-    "region": "global",
     "value": "0.8983570646"
   },
   {
     "year": "2019",
     "month": "12",
-    "region": "global",
     "value": "0.8981872946"
   },
   {
     "year": "2020",
     "month": "1",
-    "region": "global",
     "value": "0.9109200438"
   },
   {
     "year": "2020",
     "month": "2",
-    "region": "global",
     "value": "0.9155762387"
   },
   {
     "year": "2020",
     "month": "3",
-    "region": "global",
     "value": "0.9275417465"
   },
   {
     "year": "2020",
     "month": "4",
-    "region": "global",
     "value": "0.9302518478"
   },
   {
     "year": "2020",
     "month": "5",
-    "region": "global",
     "value": "0.9412838763"
   },
   {
     "year": "2020",
     "month": "6",
-    "region": "global",
     "value": "0.9490035587"
   },
   {
     "year": "2020",
     "month": "7",
-    "region": "global",
     "value": "0.9575745962"
   },
   {
     "year": "2020",
     "month": "8",
-    "region": "global",
     "value": "0.9714919244"
   },
   {
     "year": "2020",
     "month": "9",
-    "region": "global",
     "value": "0.9732165344"
   },
   {
     "year": "2020",
     "month": "10",
-    "region": "global",
     "value": "0.9721981933"
   },
   {
     "year": "2020",
     "month": "11",
-    "region": "global",
     "value": "0.9749082946"
   },
   {
     "year": "2020",
     "month": "12",
-    "region": "global",
     "value": "0.9715138243"
   },
   {
     "year": "2021",
     "month": "1",
-    "region": "global",
     "value": "0.9678647687"
   },
   {
     "year": "2021",
     "month": "2",
-    "region": "global",
     "value": "0.9706241445"
   },
   {
     "year": "2021",
     "month": "3",
-    "region": "global",
     "value": "0.9774979469"
   },
   {
     "year": "2021",
     "month": "4",
-    "region": "global",
     "value": "0.9818505338"
   },
   {
     "year": "2021",
     "month": "5",
-    "region": "global",
     "value": "0.9806624692"
   },
   {
     "year": "2021",
     "month": "6",
-    "region": "global",
     "value": "0.9984834383"
   },
   {
     "year": "2021",
     "month": "7",
-    "region": "global",
     "value": "1.006715029"
   },
   {
     "year": "2021",
     "month": "8",
-    "region": "global",
     "value": "1.016983301"
   },
   {
     "year": "2021",
     "month": "9",
-    "region": "global",
     "value": "1.031108678"
   },
   {
     "year": "2021",
     "month": "10",
-    "region": "global",
     "value": "1.026101834"
   },
   {
     "year": "2021",
     "month": "11",
-    "region": "global",
     "value": "1.033903641"
   },
   {
     "year": "2021",
     "month": "12",
-    "region": "global",
     "value": "1.045529702"
   },
   {
     "year": "2022",
     "month": "1",
-    "region": "global",
     "value": "1.049178757"
   },
   {
     "year": "2022",
     "month": "2",
-    "region": "global",
     "value": "1.036421139"
   },
   {
     "year": "2022",
     "month": "3",
-    "region": "global",
     "value": "1.041429354"
   }
 ]

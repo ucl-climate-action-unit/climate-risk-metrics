@@ -1,4 +1,5 @@
 import { scaleLinear } from 'd3'
+import { range } from 'lodash'
 import { useMeasure } from 'react-use'
 
 export function RotationChart({ value, hasAxis = true, hasTrack = true }) {
@@ -54,8 +55,7 @@ export function RotationChart({ value, hasAxis = true, hasTrack = true }) {
       </g>
     )
   })
-  const track = [...Array(stepsToIdeal).keys()]
-    .filter((k) => !!k)
+  const track = range(1, stepsToIdeal + 1)
     .map((i) => i * STEP)
     .map((step) => {
       return (

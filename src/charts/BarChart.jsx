@@ -1,11 +1,11 @@
 import { scaleLinear } from 'd3'
+import { range } from 'lodash'
 import { useMeasure } from 'react-use'
 
-export function BarChart({ value }) {
+export function BarChart({ value, hasAxis = true, hasTrack = true }) {
   const [wrapperRef, { width, height }] = useMeasure()
   const PADDINGX = 24
   const PADDINGY = 30
-  // const LINE_HEIGHT = 20
   const IDEAL_VALUE = 0
   const STEP = 0.1
   const SCALE = [-1, -0.5, 0, 0.5, 1]
@@ -43,9 +43,7 @@ export function BarChart({ value }) {
       </g>
     )
   })
-
-  const track = [...Array(stepsToIdeal).keys()]
-    .filter((k) => !!k)
+  const track = range(1, stepsToIdeal + 1)
     .map((i) => i * STEP)
     .map((step) => {
       const value = computeDistance(step)
@@ -55,7 +53,7 @@ export function BarChart({ value }) {
   return (
     <div ref={wrapperRef} className="h-full relative">
       <svg height={height} width={width} className="absolute">
-        {scale}
+        {hasAxis && scale}
         <circle
           r={r}
           cy={y0}
@@ -65,7 +63,7 @@ export function BarChart({ value }) {
           strokeWidth={1}
           strokeDasharray={3.75}
         />
-        {track}
+        {hasTrack && track}
         <circle fill="white" r={r} cy={y0} cx={computeDistance(value)} />
       </svg>
     </div>

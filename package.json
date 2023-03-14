@@ -23,7 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "fetch-content": "node scripts/fetch-content.mjs",
-    "build": "yarn fetch-content && react-scripts build",
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "build": "yarn fetch-content && yarn fetch-data && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

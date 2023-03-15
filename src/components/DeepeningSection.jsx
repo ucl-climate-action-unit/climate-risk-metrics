@@ -13,7 +13,7 @@ export function DeepeningSection() {
           {SECTIONS.map((m) => {
             const { id, content } = m
             return (
-              <Element key={`${id}Section`} name={id} className="first:mt-0 mt-20">
+              <Element key={`${id}Section`} name={id} className="first:pt-0 pt-20">
                 <MetricSection content={content} id={id} />
               </Element>
             )

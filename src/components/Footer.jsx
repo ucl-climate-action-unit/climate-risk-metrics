@@ -19,7 +19,13 @@ export function Footer() {
           <p>{credits}</p>
           <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:gap-5">
             <div className="h-6 flex items-center">
-              <UCLClimateActionUnitLOGO />
+              <a
+                href="https://www.ucl.ac.uk/climate-action-unit/climate-action-unit-0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <UCLClimateActionUnitLOGO />
+              </a>
             </div>
             <div className="h-6 flex items-center">
               <a href="https://www.data4chan.ge/" target="_blank" rel="noreferrer">

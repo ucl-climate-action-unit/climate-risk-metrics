@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshiRegular: ['Satoshi-Regular', ...defaultTheme.fontFamily.sans],
+        sans: ['Satoshi-Regular', ...defaultTheme.fontFamily.sans],
+        bold: ['Satoshi-Bold', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         EEI: '#CC1476',

@@ -8,7 +8,7 @@ function App() {
     document.title = intro.page_title
   }, [])
   return (
-    <div className="App font-satoshiRegular">
+    <div>
       <MenuMobile />
       <IntroSection />
       <DeepeningSection />

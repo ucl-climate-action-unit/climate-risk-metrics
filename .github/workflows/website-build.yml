@@ -1,0 +1,31 @@
+name: Website Build
+
+concurrency:
+  group: ${{ github.repository }}
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Yarn Setup
+        uses: DerYeger/yarn-setup-action@v1.0.1
+        with:
+          node-version: 19
+      - name: fetch new data and build
+        run: CI=false PUBLIC_URL=/climate-risk-metrics/ yarn build
+      - name: publish on github pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: gh-pages
+          build_dir: build
+          jekyll: false
+          verbose: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

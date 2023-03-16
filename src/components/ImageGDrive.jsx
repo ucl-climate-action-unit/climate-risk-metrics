@@ -3,7 +3,7 @@ export function ImageGDrive({ src, alt }) {
   return (
     src.match(regexUrl) && (
       <img
-        className="max-h-[690px]"
+        className="max-h-[690px] mb-7"
         alt={alt}
         src={src.replace(regexUrl, 'https://drive.google.com/uc?export=view&id=$1')}
       />

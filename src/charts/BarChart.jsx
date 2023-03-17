@@ -8,7 +8,7 @@ export function BarChart({ value, hasAxis = true, hasTrack = true }) {
   const PADDINGY = 30
   const IDEAL_VALUE = 0
   const STEP = 0.1
-  const SCALE = [-1, -0.5, 0, 0.5, 1]
+  const SCALE = [-0.6, -0.3, 0, 0.3, 0.6]
 
   const distanceToIdeal = value - IDEAL_VALUE
   const stepsToIdeal = Math.floor(distanceToIdeal / STEP)
@@ -16,7 +16,7 @@ export function BarChart({ value, hasAxis = true, hasTrack = true }) {
   const r = width / 9
 
   const computeDistance = scaleLinear()
-    .domain([-1, 1])
+    .domain([-0.6, .6])
     .range([PADDINGX, width - PADDINGX])
 
   const scale = SCALE.map((v) => {

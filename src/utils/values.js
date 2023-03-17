@@ -57,24 +57,22 @@ export const computeCurrentRegionValues = (metricId) => {
     }
   })
 }
+
 export const computeYearValues = (metricId) => {
-  let decemberValues = []
-  const currentYear = new Date().getFullYear();
-  const minYear = currentYear - 30;
+  const decemberValues = []
 
   data[metricId]['Global'].forEach((datum) => {
-    if (datum.year >= minYear) {
-      const lastValue = data[metricId]['Global']
-        .filter((d) => d.year === datum.year)
-        .reduce((prev, current) => {
-          return +prev.month > +current.month ? prev : current
-        })
-      if (!decemberValues.find((e) => e.year === datum.year)) {
-        decemberValues.push({ ...lastValue, value: formatValue(lastValue.value, metricId) })
-      }
+    const lastValue = data[metricId]['Global']
+      .filter((d) => d.year === datum.year)
+      .reduce((prev, current) => {
+        return +prev.month > +current.month ? prev : current
+      })
+    if (!decemberValues.find((e) => e.year === datum.year)) {
+      decemberValues.push({ ...lastValue, value: formatValue(lastValue.value, metricId) })
     }
   })
-  return decemberValues
+
+  return decemberValues.slice(decemberValues.length - 30, decemberValues.length)
 }
 
 export const computeCurrentGlobalValue = (metricId) => {

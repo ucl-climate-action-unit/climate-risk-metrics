@@ -3,7 +3,7 @@ import { useMeasure } from 'react-use'
 export function CardMinimal({ id, children, year, value, unit, isMini = false, total }) {
   const [ref, { width }] = useMeasure()
   return (
-    <div ref={ref} className={`${isMini ? 'w-14' : 'min-w-[88px]'}`}>
+    <div ref={ref} className={`${isMini ? 'w-14 m-auto' : 'min-w-[88px]'}`}>
       <div
         style={{ height: width }}
         className={`${

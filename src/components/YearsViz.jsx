@@ -6,9 +6,9 @@ import fixed_content from '../data/fixed_content.json'
 export function YearsViz({ id }) {
   return (
     <div
-      className={`flex flex-wrap w-full gap-4 ${
+      className={`grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-8 xl:grid-cols-10 w-full gap-4 ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
-      } bg-opacity-10 md:p-6 p-3 rounded-lg lg:mb-14 mb-8`}
+      } bg-opacity-10  md:p-6 p-3 rounded-lg lg:mb-14 mb-8`}
     >
       {computeYearValues(id).map((row) => {
         const { year, value } = row

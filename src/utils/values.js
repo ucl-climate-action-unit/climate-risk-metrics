@@ -36,7 +36,9 @@ const data = {
 export const formatValue = (value, metricId) => round(parseFloat(value), metricId === 'UWI' ? 1 : 2)
 
 const computeCurrent = (prev, current) => {
-  return +prev.year >= +current.year && +prev.month > +current.month ? prev : current
+  return !current.value || (+prev.year >= +current.year && +prev.month > +current.month)
+    ? prev
+    : current
 }
 
 export const computeGlobalValueByYear = (year, metricId) => {

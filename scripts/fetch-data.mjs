@@ -15,11 +15,14 @@ axios
   .get(url('EEI'))
   .then((res) => res.data)
   .then((data) => {
-    const json = data.sheets[0].data[0].rowData.map((row) => {
-      return {
-        year: row.values[0]?.formattedValue,
-        month: row.values[1]?.formattedValue,
-        value: row.values[3]?.formattedValue,
+    const json = []
+    data.sheets[0].data[0].rowData.forEach((row) => {
+      if (row.values[3]?.formattedValue) {
+        json.push({
+          year: row.values[0]?.formattedValue,
+          month: row.values[1]?.formattedValue,
+          value: row.values[3]?.formattedValue,
+        })
       }
     })
     fs.writeFileSync('src/data/EEI_Global.json', JSON.stringify(json, null, 2))
@@ -29,13 +32,14 @@ axios
   .then((res) => res.data)
   .then((data) => {
     data.sheets.forEach((sheet) => {
-      const json = sheet.data[0].rowData.map((row) => {
-        return {
+      const json = []
+      sheet.data[0].rowData.forEach((row) => {
+        json.push({
           year: row.values[0]?.formattedValue,
           month: row.values[1]?.formattedValue,
           value: row.values[4]?.formattedValue,
           total: row.values[3]?.formattedValue,
-        }
+        })
       })
       fs.writeFileSync(`src/data/STC_${sheet.properties.title}.json`, JSON.stringify(json, null, 2))
     })
@@ -45,11 +49,12 @@ axios
   .then((res) => res.data)
   .then((data) => {
     data.sheets.forEach((sheet) => {
-      const json = sheet.data[0].rowData.map((row) => {
-        return {
+      const json = []
+      sheet.data[0].rowData.forEach((row) => {
+        json.push({
           year: row.values[0]?.formattedValue,
           value: row.values[3]?.formattedValue,
-        }
+        })
       })
       fs.writeFileSync(`src/data/UWI_${sheet.properties.title}.json`, JSON.stringify(json, null, 2))
     })

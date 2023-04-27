@@ -16,7 +16,7 @@ axios
   .then((res) => res.data)
   .then((data) => {
     const json = data.sheets[0].data[0].rowData
-      .filter((row) => row.values.some((r) => r.formattedValue))
+      .filter((row) => row.values[3].formattedValue)
       .map((row) => {
         return {
           year: row.values[0]?.formattedValue,
@@ -32,7 +32,7 @@ axios
   .then((data) => {
     data.sheets.forEach((sheet) => {
       const json = sheet.data[0].rowData
-        .filter((row) => row.values.some((r) => r.formattedValue))
+        .filter((row) => row.values[4].formattedValue)
         .map((row) => {
           return {
             year: row.values[0]?.formattedValue,
@@ -50,7 +50,7 @@ axios
   .then((data) => {
     data.sheets.forEach((sheet) => {
       const json = sheet.data[0].rowData
-        .filter((row) => row.values.some((r) => r.formattedValue))
+        .filter((row) => row.values[3].formattedValue)
         .map((row) => {
           return {
             year: row.values[0]?.formattedValue,

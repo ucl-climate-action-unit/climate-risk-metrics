@@ -33,7 +33,8 @@ const data = {
   },
 }
 
-export const formatValue = (value, metricId) => round(parseFloat(value), metricId === 'UWI' ? 1 : 2)
+export const formatValue = (value, metricId) =>
+  value ? round(parseFloat(value), metricId === 'UWI' ? 1 : 2) : ''
 
 const computeCurrent = (prev, current) => {
   return !current.value || (+prev.year >= +current.year && +prev.month > +current.month)
@@ -45,7 +46,8 @@ export const computeGlobalValueByYear = (year, metricId) => {
   return formatValue(
     data[metricId]['Global']
       .filter((d) => +d.year === +year)
-      .reduce((prev, current) => (+prev.month > +current.month ? prev : current)).value,
+      .reduce((prev, current) => (!current.value || +prev.month > +current.month ? prev : current))
+      .value,
     metricId
   )
 }
@@ -67,7 +69,7 @@ export const computeYearValues = (metricId) => {
     const lastValue = data[metricId]['Global']
       .filter((d) => d.year === datum.year)
       .reduce((prev, current) => {
-        return +prev.month > +current.month ? prev : current
+        return !current.value || +prev.month > +current.month ? prev : current
       })
     if (!decemberValues.find((e) => e.year === datum.year)) {
       decemberValues.push({ ...lastValue, value: formatValue(lastValue.value, metricId) })

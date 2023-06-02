@@ -6,7 +6,7 @@ export function CurveAmplitudeChart({ hasAxis = true, value, isMini = false }) {
   const [wrapperRef, { width, height }] = useMeasure()
   const PADDINGX = isMini ? 0 : 24
   // const SPACE_FOR_SCALE = 24
-  const SCALE = isMini ? [1] : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const SCALE = isMini ? [1] : [1, 2, 3, 4, 5, 6]
   const valueInt = round(value, 1)
   return (
     <div ref={wrapperRef} className="h-full relative">

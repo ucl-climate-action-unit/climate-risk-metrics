@@ -10,7 +10,7 @@ export function Sinusoid({
   isMini = false,
 }) {
   const bPercentage = 0.3
-  const NUM_PEAKS = isMini ? 4 : 6
+  const NUM_PEAKS = isMini ? 4 : 4
   const k = width / (NUM_PEAKS - 1)
   const b = k * bPercentage
   const yStartingPoint = height / 2

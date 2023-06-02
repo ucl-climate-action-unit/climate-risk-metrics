@@ -10,13 +10,13 @@ export function Sinusoid({
   isMini = false,
 }) {
   const bPercentage = 0.3
-  const NUM_PEAKS = isMini ? 3 : 3
+  const NUM_PEAKS = isMini ? 4 : 6
   const k = width / (NUM_PEAKS - 1)
   const b = k * bPercentage
   const yStartingPoint = height / 2
   const computeAmplitude = scaleLinear()
-    .domain([1, 6])
-    .range([isMini ? 1 : 6, height / 2])
+    .domain([1, 10])
+    .range([isMini ? 1 : 10, height / 2])
   let path = `M 0,${yStartingPoint}`
 
   range(NUM_PEAKS).forEach((i) => {

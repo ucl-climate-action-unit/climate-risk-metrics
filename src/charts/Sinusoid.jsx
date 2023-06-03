@@ -13,7 +13,7 @@ export function Sinusoid({
   const NUM_PEAKS = isMini ? 3 : 3
   const k = width / (NUM_PEAKS - 1)
   const b = k * bPercentage
-  const yStartingPoint = height /* height / 2 */
+  const yStartingPoint = 7 * height / 8 /* height / 2 */
   const computeAmplitude = scaleLinear()
     .domain([1, 6])
     .range([isMini ? 1 : 6, height])

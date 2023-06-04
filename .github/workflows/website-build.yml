@@ -20,7 +20,7 @@ jobs:
           node-version: 19
       - name: fetch new data and build
         # run: CI=false PUBLIC_URL=/climate-risk-metrics/ yarn build
-        run: CI=false PUBLIC_URL=. yarn build
+        run: CI=false PUBLIC_URL=./ yarn build
       - name: publish on github pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

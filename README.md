@@ -68,3 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## How to update or maintain the custom domain name?
+
+The ./public folder contains a CNAME file with the correct URL. This CNAME file gets automatically copied to the gh-pages branch through the build process, and this ensures that GitHub maintains its settings that the website is deployed through the custom URL.
+
+Beyond that, set up a CNAME record for the www subdomain and an @ record in your name host provider, as per GitHub's instructions [https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site](here).

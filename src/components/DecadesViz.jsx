@@ -4,7 +4,7 @@ import { CardMinimal } from '.'
 import fixed_content from '../data/fixed_content.json'
 
 export function DecadesViz({ id }) {
-  const DECADES = [2010, 2016, 2022]
+  const DECADES = [2010, 2018, 2024]
   return (
     <div className="grid grid-cols-3 w-full lg:gap-4 gap-2 bg-EEI bg-opacity-10 md:p-6 p-3 rounded-lg lg:mb-14 mb-8">
       {DECADES.map((year) => {

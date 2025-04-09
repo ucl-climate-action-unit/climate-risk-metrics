@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Yarn Setup
-        uses: DerYeger/yarn-setup-action@v1.0.1
+        uses: DerYeger/yarn-setup-action@v2.0.21
         with:
           node-version: 19
       - name: fetch new data and build

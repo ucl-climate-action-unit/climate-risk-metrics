@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "https://www.climatedash.org/static/css/main.2b53b634.css",
+    "main.js": "https://www.climatedash.org/static/js/main.3fffb75d.js",
+    "static/js/787.9bbc600e.chunk.js": "https://www.climatedash.org/static/js/787.9bbc600e.chunk.js",
+    "static/media/Satoshi-Regular.ttf": "https://www.climatedash.org/static/media/Satoshi-Regular.fe762acc7e97cb612805.ttf",
+    "static/media/Satoshi-Bold.ttf": "https://www.climatedash.org/static/media/Satoshi-Bold.137a52d9f47dd71c6247.ttf",
+    "static/media/Satoshi-Regular.woff": "https://www.climatedash.org/static/media/Satoshi-Regular.ca3da5fd2b609836ef69.woff",
+    "static/media/Satoshi-Bold.woff": "https://www.climatedash.org/static/media/Satoshi-Bold.a875ff682ee232938607.woff",
+    "static/media/Satoshi-Regular.woff2": "https://www.climatedash.org/static/media/Satoshi-Regular.9ec05085c4cd2966eba8.woff2",
+    "static/media/Satoshi-Bold.woff2": "https://www.climatedash.org/static/media/Satoshi-Bold.a0e6d25529eab537426c.woff2",
+    "index.html": "https://www.climatedash.org/index.html",
+    "main.2b53b634.css.map": "https://www.climatedash.org/static/css/main.2b53b634.css.map",
+    "main.3fffb75d.js.map": "https://www.climatedash.org/static/js/main.3fffb75d.js.map",
+    "787.9bbc600e.chunk.js.map": "https://www.climatedash.org/static/js/787.9bbc600e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b53b634.css",
+    "static/js/main.3fffb75d.js"
+  ]
+}

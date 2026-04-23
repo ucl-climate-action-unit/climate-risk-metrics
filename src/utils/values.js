@@ -76,7 +76,7 @@ export const computeYearValues = (metricId) => {
     }
   })
 
-  return decemberValues.slice(decemberValues.length - 30, decemberValues.length)
+  return decemberValues.slice(decemberValues.length - 40, decemberValues.length)
 }
 
 export const computeCurrentGlobalValue = (metricId) => {

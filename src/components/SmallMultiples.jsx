@@ -1,11 +1,12 @@
 import { RegionsViz, DecadesViz, YearsViz } from '.'
 
 export function SmallMultiples({ id, type }) {
+  const [baseType, year] = type.split(':')
   return (
     <div className="w-full">
-      {type === 'DECADES' && <DecadesViz id={id} />}
-      {type === 'REGIONS' && <RegionsViz id={id} />}
-      {type === 'YEARS' && <YearsViz id={id} />}
+      {baseType === 'DECADES' && <DecadesViz id={id} />}
+      {baseType === 'REGIONS' && <RegionsViz id={id} year={year} />}
+      {baseType === 'YEARS' && <YearsViz id={id} />}
     </div>
   )
 }

@@ -1,16 +1,19 @@
 import { CardMinimal } from '.'
 import { BarChart, CurveAmplitudeChart } from '../charts'
-import { computeCurrentRegionValues } from '../utils/values'
+import { computeCurrentRegionValues, computeRegionValuesForYear } from '../utils/values'
 import fixed_content from '../data/fixed_content.json'
 
-export function RegionsViz({ id }) {
+export function RegionsViz({ id, year }) {
+  const rows = year
+    ? computeRegionValuesForYear(year, id)
+    : computeCurrentRegionValues(id)
   return (
     <div
       className={`grid xl:grid-cols-6 grid-cols-3 w-full gap-4 ${
         id === 'EEI' ? 'bg-EEI' : id === 'STC' ? 'bg-STC' : 'bg-UWI'
       } bg-opacity-10 md:p-6 p-3 rounded-lg lg:mb-14 mb-8`}
     >
-      {computeCurrentRegionValues(id).map((row) => {
+      {rows.map((row) => {
         const { region, value, total } = row
         return (
           <CardMinimal

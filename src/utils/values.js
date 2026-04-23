@@ -62,6 +62,19 @@ export const computeCurrentRegionValues = (metricId) => {
   })
 }
 
+export const computeRegionValuesForYear = (year, metricId) => {
+  return Object.entries(data[metricId]).map((d) => {
+    const row = d[1]
+      .filter((r) => +r.year === +year)
+      .reduce((prev, current) => (!current.value || +prev.month > +current.month ? prev : current))
+    return {
+      region: d[0],
+      value: formatValue(row.value, metricId),
+      total: formatValue(row.total, metricId),
+    }
+  })
+}
+
 export const computeYearValues = (metricId) => {
   const decemberValues = []
 
